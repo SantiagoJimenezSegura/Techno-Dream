@@ -1,5 +1,12 @@
 ServerEvents.recipes(event => {	
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+=======
+>>>>>>> 0d5d0362a05a19da8df3be31a83a64ef736cd57e
   // Shaped mud recipe (returns empty bucket)
+>>>>>>> b72a258ad13452280ec0da6015d655e9424abd27
   event.shaped(
     Item.of('minecraft:mud', 8),
     [
