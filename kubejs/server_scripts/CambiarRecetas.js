@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {	
-
   // Shaped mud recipe (returns empty bucket)
   event.shaped(
     Item.of('minecraft:mud', 8),

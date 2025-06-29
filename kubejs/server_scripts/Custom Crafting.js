@@ -58,4 +58,16 @@ event.shapeless(
   ]
 )
 
+event.shaped(
+  'gtceu:primitive_clay_blast_furnace',
+  [
+    'MMM',
+    'M M',
+    'MMM'
+  ],
+  {
+    M: 'minecraft:mud_bricks'
+  }
+);
+
 })

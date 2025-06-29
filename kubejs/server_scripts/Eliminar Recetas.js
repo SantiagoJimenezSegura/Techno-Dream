@@ -14,4 +14,9 @@ event.remove({id: 'tconstruct:common/basalt_blast_furnace'})
 event.remove({id: 'jei:/tconstruct/smeltery/melting/metal/iron/ingot_5'})
 
 event.remove({output: 'minecraft:iron_ingot', type: 'minecraft:smelting'})
+
+event.remove({ output: 'minecraft:furnace' });
+
+event.remove({ output: 'create:encased_fan' });
+
 })
