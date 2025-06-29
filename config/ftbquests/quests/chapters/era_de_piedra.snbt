@@ -1,0 +1,225 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "era_de_piedra"
+	group: "3F6FC1AC3A5D652E"
+	icon: "create:large_cogwheel"
+	id: "3B5580E3A803AD4E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7C3F28A5CDE4EB1B"]
+			description: ["Empecemos con algo sencillo, recoge un poco de &6roca&r y &6troncos&r de madera."]
+			id: "4A0C0031720C92A4"
+			rewards: [{
+				count: 8
+				id: "42A1484D94DC6DCF"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 32L
+					id: "6ED17D85DDE4F3DB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:cobblestone"
+						}
+					}
+					title: "Roca"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "2EF283C133D73B89"
+					item: {
+						Count: 64
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Troncos"
+					type: "item"
+				}
+			]
+			title: "Recoge Materiales"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A0C0031720C92A4"]
+			description: ["Por ahora &6no es relevante&r tener o no este árbol, pero quizás sería &cbuena idea&r empezar a talarlo desde un inicio, guarda la &6resina&r y los troncos, posteriormente sigue &6plantando y talando&r de vez en cuando."]
+			id: "3611D2F70F663EC0"
+			shape: "hexagon"
+			subtitle: "Caucho de por vida, oh yeah baby"
+			tasks: [{
+				count: 4L
+				id: "111B0A32E5DA47AA"
+				item: { Count: 4, id: "gtceu:rubber_sapling" }
+				type: "item"
+			}]
+			title: "Árbol de Caucho"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26E90CA7DEA3F8FA"]
+			description: [
+				"Como te habrás dado cuenta, &4no puedes crear herramientas vanilla&r, por esto tendrás que obtar con usar herramientas de &6Tinkers Construct&r, más adelante puedes usar herramientas de &6GTm&r."
+				""
+				"Esta versión de TCs cuenta con &6mayor variedad de objetos&r que puedes crear y gracias a GretechCeu puedes hacer herramientas con materiales de &6GTm&r. &4Por supuesto, más adelante.&r"
+				""
+				"Para esta misión crea tus primeras herramientas, recuerda que puedes cambiar las partes de la herramienta por una mejor siempre que quieras en la &6Tinker Station&r o &6Tool Forge&r."
+			]
+			id: "7C3F28A5CDE4EB1B"
+			rewards: [
+				{
+					id: "1F4A8693EDB1F23D"
+					item: {
+						Count: 1
+						id: "tconstruct:tool_handle"
+						tag: {
+							Material: "tconstruct:bone"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5A57826C0F7B55C6"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
+			subtitle: "Herramientas Modulares"
+			tasks: [
+				{
+					id: "178F4163B7BA3F60"
+					item: {
+						Count: 1
+						id: "tconstruct:pick_head"
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E75DCC6C9EE924A"
+					item: {
+						Count: 1
+						id: "tconstruct:small_axe_head"
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0AB385BD69B2F3C4"
+					item: {
+						Count: 2
+						id: "tconstruct:tool_handle"
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Primeras Herramientas"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			id: "26E90CA7DEA3F8FA"
+			subtitle: "Mesitas del Tinkers"
+			tasks: [
+				{
+					id: "5F4D8BB0749A119F"
+					item: "tconstruct:tinker_station"
+					type: "item"
+				}
+				{
+					id: "772D285B335D326A"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0CBC824B3EF225C9"
+					item: { Count: 16, id: "tconstruct:pattern" }
+					type: "item"
+				}
+			]
+			title: "Estación y Constructor"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4A0C0031720C92A4"]
+			description: ["Debes ser &6rápido&r, quizas aún no lo hayas notado pero vas a tener &6una noche dificil&r, busca recursos rápido y armate un refugio sencillo, puedes &6cavar un agujero&r y pasar la noche por hoy."]
+			id: "35252902AF656EB2"
+			rewards: [{
+				count: 8
+				id: "7EA12C41FCADA9E1"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Escondete"
+			tasks: [{
+				id: "3F8B64556EEA94A0"
+				title: "Una Noche Realmente Oscura"
+				type: "checkmark"
+			}]
+			title: "¿Una noche muy Oscura?"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7C3F28A5CDE4EB1B"
+				"26E90CA7DEA3F8FA"
+			]
+			description: [
+				"El &6Tinker´s Anvil&r o &6Tool Forge&r es un mejora de la &6Tinkers Station&r que hiciste anteriormente, en ésta podrás crear objetos más avanzados."
+				""
+				"Pero por el momento &6no puedes hacerla&r, esta se puede realizar con bloques de aleaciones que aun no tienes a tu disposición. Regresa cuando puedas crear &6bloques de bronze&r."
+			]
+			id: "24DF63E9A0D8F007"
+			rewards: [{
+				id: "766BA24DCD3444E8"
+				item: {
+					Count: 1
+					id: "tconstruct:tool_handle"
+					tag: {
+						Material: "tconstruct:steel"
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "\"Tool Forge\""
+			tasks: [{
+				consume_items: false
+				id: "652B0B202014DD42"
+				item: {
+					Count: 1
+					id: "tconstruct:tinkers_anvil"
+					tag: { }
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+	]
+	title: "Edad Primitiva"
+}

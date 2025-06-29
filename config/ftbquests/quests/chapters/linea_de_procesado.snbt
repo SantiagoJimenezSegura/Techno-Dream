@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "linea_de_procesado"
+	group: "1B5043855EFD55F5"
+	id: "3155C728BB1CE817"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Lineas de procesado"
+}

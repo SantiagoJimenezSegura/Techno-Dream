@@ -1,0 +1,129 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "progreso"
+	group: ""
+	icon: "gtceu:wetware_processor_mainframe"
+	id: "793D57EFB8E7ABE5"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "503A71179FACC361"
+			rewards: [{
+				count: 16
+				id: "6E8C20FB8153BC9C"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			subtitle: "Entrando al voltaje ultra bajo"
+			tasks: [{
+				consume_items: false
+				id: "674DED0C46C8AF69"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			title: "VOLTAJE ULTRA BAJO - ULV"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "69FB7A16ECE148DA"
+			rewards: [{
+				count: 8
+				id: "1AEE6904BB083DC0"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			subtitle: "Entrando al voltaje bajo"
+			tasks: [{
+				consume_items: false
+				id: "7009E978C3898750"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "VOLTAGE BAJO - LV"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "2E22A9D5C40ABB87"
+			title: "VOLTAJE MEDIO - MV"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "3B83AC07360F0854"
+			title: "VOLTAJE ALTO - HV"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			id: "54BDD74140CFC8DC"
+			title: "VOLTAJE EXTREMO - EV"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1EBECAA22BF58256"]
+			id: "649A91688CE1ADE7"
+			subtitle: "Upgrades, people, upgrades"
+			tasks: [{
+				id: "19DB81AC636620D6"
+				item: "gtceu:solid_machine_casing"
+				type: "item"
+			}]
+			title: "Vapor a alta presión"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2F5A4CCBD323975D"]
+			id: "21CF30A10374177E"
+			subtitle: "Cuidado con las manos"
+			tasks: [{
+				id: "39FC8FDF6393C8CD"
+				item: "gtceu:steam_machine_casing"
+				type: "item"
+			}]
+			title: "Vapor a presión"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			id: "1EBECAA22BF58256"
+			title: "CIRCUITO PRIMITIVO AVANZADO"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "2F5A4CCBD323975D"
+			title: "CIRCUITO PRIMITIVO"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["503A71179FACC361"]
+			id: "4E81B21E00BA37AD"
+			tasks: [{
+				id: "20C937F260276E0A"
+				item: "gtceu:ulv_machine_hull"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["69FB7A16ECE148DA"]
+			id: "32855D2DBF5CD63F"
+			tasks: [{
+				id: "3BC7AB79F41A540C"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+	]
+	title: "Progreso"
+}

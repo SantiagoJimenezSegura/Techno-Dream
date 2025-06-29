@@ -1,0 +1,371 @@
+{
+	autofocus_id: "7CD528007BA63F09"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "la_creacin"
+	group: "7FFACB28C131871D"
+	icon: "biomesoplenty:origin_grass_block"
+	id: "15BAA7C58DC00BC0"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6Cuando eras pequeño&r viste un programa de televisión en donde el protagonista hacia enormes creaciones desde cero, practicamente el tipo creo una civilización desde la edad de piedra hasta una época futurista. Desde ese momento te sentiste atraído por el programa, sabías que todo era mentira pero aun asi querias participar en el, por eso cuando un día de la nada recibiste una llamada del programa, al parecer tus padres vieron tu emoción y quisieron hacer realidad tu sueño de participar en el programa."
+				""
+				"Actualmente tienes 32 años y ha llegado la hora de participar en el programa, para esto te consiguieron un vuelo a la isla en donde sería el programa, todo iba viento en popa, pero algo salió mal en el vuelo y el avión tuvo que aterrizar de emergencia en una isla diferente. Sientes un aire extraño, como si no estuvieras en &6tu realidad&r, revisas el avión y eres el único."
+				""
+				"Tu &6misión&r... creó que ya la sabes, buena suerte."
+			]
+			icon: "biomesoplenty:origin_grass_block"
+			icon_scale: 2.0d
+			id: "7CD528007BA63F09"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "39FE734F52F7CBA3"
+				table_id: 4653478291503427931L
+				type: "choice"
+			}]
+			shape: "pentagon"
+			size: 1.0d
+			subtitle: "Read the quest boooooring"
+			tasks: [{
+				id: "39BFE2AA527EF914"
+				title: "Entendido"
+				type: "checkmark"
+			}]
+			title: "Origen"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CD528007BA63F09"]
+			dependency_requirement: "one_completed"
+			description: ["Modpack creado por &6Cigarcat&r y &6MrFrilled&r."]
+			id: "771320417538EB2A"
+			rewards: [{
+				id: "63F876B02D69E1C3"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3B128F076A40A6CC"
+				title: "Sobre nosotros"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CD528007BA63F09"]
+			description: [
+				"Gregtech tiene un largo recorrido hasta el día de hoy, pasando por versiones muy antiguas de minecraft hasta la actualidad, dejado una huella grande en la comunidad. Podemos ver algunos modpacks como &6GTNH&r (1.7.10), &6Star Technology&r (1.20.1), &6Nomifactory&r (1.12.2), &6Monifactory&r (1.20.1), &6Omnifactory&r (1.12.2), &6sky of grind&r (1.20.1), entre otros."
+				""
+				"Pero algo en lo que coincimos varias personas es que la comunidad española de Gregtech no es tan abundante como la inglesa, de esta manera hay poca información en español y probablemente pocos o casi ningun &6modpack de Gregtech en español&r, por eso nos dimos a la tarea de hacerlo realidad."
+				""
+				"Tengan paciencia, es nuestro primer modpack y vamos en marcha a esperemos uno de los &6primeros modpack españoles&r conocido."
+			]
+			icon: "minecraft:writable_book"
+			id: "28D298444826CD2F"
+			rewards: [
+				{
+					id: "650BC2E62F510824"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "212F04365978BB25"
+					item: "gtceu:prospector.lv"
+					type: "item"
+				}
+			]
+			subtitle: "Sorprendente, ¿Verdad?"
+			tasks: [{
+				id: "3843569A27D6695D"
+				title: "Ok"
+				type: "checkmark"
+			}]
+			title: "Modpack Español"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CD528007BA63F09"]
+			description: [
+				"El modpack está &6en progreso&r, espera cambios en &6futuras actualizaciones&r para mejorar la experiencia, comodida, jugabilidad y retos a lo largo de esta. "
+				""
+				"Si tienes dudas o sugerencias puedes hacernoslas saber através de la &5comunidad de discord&r."
+			]
+			icon: "minecraft:crafting_table"
+			id: "29B7CC4B52A4C8F9"
+			rewards: [{
+				id: "499884BA8808BF2F"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Checa de vez en cuando la comunidad"
+			tasks: [{
+				id: "35923EE8EC1FB921"
+				title: "Ok"
+				type: "checkmark"
+			}]
+			title: "En progreso"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["7CD528007BA63F09"]
+			description: [
+				"¿Quién puso esto &4aquí&r?"
+				"{@pagebreak}"
+				"&5Psss&r... pequeñita ayuda."
+			]
+			icon: "expatternprovider:fishbig"
+			id: "41582E10D3D93A52"
+			optional: true
+			rewards: [
+				{
+					id: "15C1D51AA7AD0970"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "4405ED3DB00CB2CE"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4B56A53460D5E20F"
+					item: "minecraft:golden_carrot"
+					title: "SATURACIÓN AL MÁXIMO"
+					type: "item"
+				}
+				{
+					id: "6EF94CFDCBB10B8A"
+					item: {
+						Count: 1
+						id: "tconstruct:sword"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:steel"
+								"tconstruct:steel"
+								"tconstruct:steel"
+							]
+							tic_modifiers: [
+								{
+									level: 3
+									name: "tconstruct:ductile"
+								}
+								{
+									level: 1
+									name: "tconstruct:silky_shears"
+								}
+							]
+							tic_multipliers: {
+								"tconstruct:durability": 1.1f
+								"tconstruct:mining_speed": 0.5f
+							}
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:armor_toughness": 3.0f
+								"tconstruct:attack_damage": 7.475f
+								"tconstruct:attack_speed": 1.68f
+								"tconstruct:durability": 1163.6624f
+								"tconstruct:harvest_tier": "minecraft:diamond"
+								"tconstruct:mining_speed": 3.1499999f
+								"tconstruct:projectile_damage": 2.3f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "No sé como llegó esto aquí"
+			tasks: [
+				{
+					id: "0FAACF4976210E66"
+					title: "Da Click aquí"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					count: 1024L
+					id: "0F925F819BCAC047"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 1024L
+					id: "2DF5430FD83D0D6C"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					match_nbt: false
+					title: "Tronquitos"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 1024L
+					id: "26642B22967CB246"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 512L
+					id: "465C6CA13ED6C2F2"
+					item: { Count: 512, id: "minecraft:stone" }
+					type: "item"
+				}
+			]
+			title: "Guiño"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7CD528007BA63F09"]
+			description: [
+				"&lComo nuestro &6primer pack&r de mods es muy probable que contenga &6ciertos errores, recetas faltantes, un libro en progreso&r, entre otras cosas. Por este motivo los invitamos a unirse a nuestra comunidad de discord en donde podran ingresar para obtener ayuda con el progreso, reportar errores, y enterarse de &6cambios en las actualizaciones&r futuras.&r&r"
+				""
+				"&5Discord&r: https://discord.gg/ekcF2kafTM"
+			]
+			id: "7E81497E7340EA50"
+			rewards: [{
+				id: "3348899D89488905"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "06CD38D4A682DE70"
+				title: "Problemas y Errores"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7CD528007BA63F09"]
+			description: [
+				"El modpack esta dividido en &6Períodos&r, en la parte izquierda. Los períodos estan &6ordenados conforme el progreso del jugador&r, si estas atascado en alguna parte puedes pedir ayuda en la comunidad."
+				""
+				"&6Multibloques&r: Aqui podras encontrar información acerca de cada multibloque y su funcionamiento, de esta manera será más fácil para los nuevos jugadores en esta área."
+				""
+				"&6Progreso&r: Aqui verás tu progreso, si te sientes perdido con lo que hacer puedes venir aqui y ver el progreso del modpack, así sabrás que el lo siguiente en la lista. También podras ver información extra no mostrada en otras partes como los circuitos, revisa esta pagina, quizás haya cosas interesantes."
+				""
+				"&6Misiones&r: Existen &63 tipos&r de misiones:"
+				""
+				"&6Principales&r: De forma circular, misiones que te llevaran através del modpack para completarlo. "
+				""
+				"&6Consejos&r: De forma hexagono, vertientes de misiones principales que darán ayudas en consejos, maquinaria, crafteo, etc. Quizás debas echarles un vistazo."
+				""
+				"{@pagebreak}"
+				"&6Consejos y Utilidades&r: Aquí podrás encontrar la tienda, aquí podra utilizar las monedas que consigues en las recompensas. Tambien se encuentra con diferentes apartados en los que podrán ver lineas para conseguir ciertos recursos, setups compactos o sencillos. Así como pequeños consejos para progresar en el modpack."
+				""
+				"&l&4Recuerda que el modpack está en progreso y tendrá el recorrido que deba tener, nos gustaría contar con tu apoyo.&r&r &lMuchas gracias por descargar Techno Dream.&r"
+			]
+			icon: "ftbquests:book"
+			id: "3CF61CD7C5DD92C1"
+			rewards: [
+				{
+					id: "158B88272E1AD519"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7B62757504453CF9"
+					item: "ftbquests:book"
+					type: "item"
+				}
+			]
+			subtitle: "Lee esto, okey?"
+			tasks: [{
+				id: "59226682856F95FA"
+				title: "Preparado"
+				type: "checkmark"
+			}]
+			title: "Antes de Iniciar"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["7CD528007BA63F09"]
+			description: ["Podrás recargar &6una única vez&r tu prospector de minerales, ten cuidado."]
+			icon: "gtceu:prospector.lv"
+			id: "68EAB118F8FC79F7"
+			optional: true
+			rewards: [{
+				id: "26A7686BD7A78778"
+				item: "gtceu:prospector.lv"
+				type: "item"
+			}]
+			subtitle: "Recarga tu Ore Prospector"
+			tasks: [
+				{
+					id: "129A964ED9002CC7"
+					title: "Recargalo, por favor"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					id: "3FDE39DC748CB5F4"
+					item: "gtceu:prospector.lv"
+					match_nbt: false
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Recarga única"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7CD528007BA63F09"]
+			description: [
+				"Algunas misiones contarán con una recompensa, estás pueden variar y ser de varios tipos, las 2 principales son las recompensas por Loot Crates, hay de 2 tipos: "
+				""
+				"&l&9Aleatorias&r&r: Estan cajas contendrán &6una recompensa aleatoria&r, estás dependen del tier en la que ésta se consiga, &6un tier mayor o con dificultad alta significa mejores recompensas&r."
+				""
+				"&l&9A Elección&r&r: Esta caja sigue las &6mismas condiciones&r que la anterior, la diferencia es que en esta caja &6tú puedes elegir&r tu recompensa."
+			]
+			id: "33F0357CC2CE7DE1"
+			rewards: [
+				{
+					id: "40105919360FEF2A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "430FF33D62D7688F"
+					item: "minecraft:torch"
+					type: "item"
+				}
+			]
+			subtitle: "¿Loot Crates?"
+			tasks: [{
+				id: "733E927CD3E0D2EF"
+				title: "Recompensas"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+	]
+	title: "La creación"
+}
