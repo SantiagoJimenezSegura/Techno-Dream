@@ -1,8 +1,4 @@
-// priority: 300
-
 ServerEvents.recipes(event => {	
-
-  event.remove({id: 'forestry:oak_door'})
 
   // Shaped mud recipe (returns empty bucket)
   event.shaped(
