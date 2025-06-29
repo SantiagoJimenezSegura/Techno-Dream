@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "7FFACB28C131871D", title: "Un nuevo comienzo" }
+		{ id: "3F6FC1AC3A5D652E", title: "Períodos" }
+		{ id: "1B5043855EFD55F5", title: "Consejos y Utilidades" }
+	]
+}

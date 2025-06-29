@@ -1,0 +1,16 @@
+{
+	id: "4338342C32A25BE0"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "random_1"
+	}
+	loot_size: 1
+	order_index: 2
+	rewards: [ ]
+	title: "Edad Primitiva"
+}

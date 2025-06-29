@@ -1,0 +1,16 @@
+{
+	id: "6D8E47759DFAAEE2"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "random_2"
+	}
+	loot_size: 1
+	order_index: 1
+	rewards: [ ]
+	title: "Metalurgia"
+}
