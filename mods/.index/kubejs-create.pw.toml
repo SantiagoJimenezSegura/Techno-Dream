@@ -1,0 +1,13 @@
+filename = 'kubejs-create-forge-2001.3.0-build.8.jar'
+name = 'KubeJS Create'
+side = 'both'
+
+[download]
+hash = 'cbeb6643d1cea979a7e01c87cfb08b9210a1c393'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6265498
+project-id = 429371

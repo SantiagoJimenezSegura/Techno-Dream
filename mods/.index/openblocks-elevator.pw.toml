@@ -1,0 +1,13 @@
+filename = 'elevatorid-1.20.1-1.9.1-forge.jar'
+name = 'OpenBlocks Elevator'
+side = 'both'
+
+[download]
+hash = '9117fbb20ce0b3b9abd25e19b3d5987a53be30c9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6602224
+project-id = 250832

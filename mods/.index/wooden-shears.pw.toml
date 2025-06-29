@@ -1,0 +1,13 @@
+filename = 'woodenshears-1.20.1-1.5.0.1.jar'
+name = 'Wooden Shears'
+side = 'both'
+
+[download]
+hash = '0d13df7a5efd521fb876f95033564c5c1459da54'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6289965
+project-id = 443192

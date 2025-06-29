@@ -1,0 +1,13 @@
+filename = 'ExtraQuests-1.5.3-1.20.1-Forge.jar'
+name = 'ExtraQuests (for FTB Quests)'
+side = 'both'
+
+[download]
+hash = '3807be10e9b2fa02a78d870c72c45092a1a3f536'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6599803
+project-id = 964194

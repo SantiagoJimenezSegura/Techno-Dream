@@ -1,0 +1,13 @@
+filename = 'steamadditions-1.4.jar'
+name = 'Gregtech Steam Additions'
+side = 'both'
+
+[download]
+hash = '874cf1129f3bd7e8c535f74733f3ff52381357f8'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6011591
+project-id = 1008510
