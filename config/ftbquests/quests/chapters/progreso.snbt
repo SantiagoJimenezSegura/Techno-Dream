@@ -47,24 +47,6 @@
 			y: 1.5d
 		}
 		{
-			id: "2E22A9D5C40ABB87"
-			title: "VOLTAJE MEDIO - MV"
-			x: 0.0d
-			y: 3.0d
-		}
-		{
-			id: "3B83AC07360F0854"
-			title: "VOLTAJE ALTO - HV"
-			x: 0.0d
-			y: 4.5d
-		}
-		{
-			id: "54BDD74140CFC8DC"
-			title: "VOLTAJE EXTREMO - EV"
-			x: 0.0d
-			y: 6.0d
-		}
-		{
 			dependencies: ["1EBECAA22BF58256"]
 			id: "649A91688CE1ADE7"
 			subtitle: "Upgrades, people, upgrades"
@@ -123,6 +105,17 @@
 			}]
 			x: -1.5d
 			y: 1.5d
+		}
+		{
+			id: "36A8E78F65D87DB0"
+			tasks: [{
+				count: 8L
+				id: "0E02473781DA2784"
+				item: { Count: 8, id: "create:andesite_casing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
 		}
 	]
 	title: "Progreso"

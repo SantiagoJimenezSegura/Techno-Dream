@@ -10,14 +10,60 @@
 	quests: [
 		{
 			dependencies: ["7C3F28A5CDE4EB1B"]
-			description: ["Empecemos con algo sencillo, recoge un poco de &6roca&r y &6troncos&r de madera."]
+			description: [
+				"Empecemos con algo sencillo, recoge &6madera&r, &6roca&r, &6arena&r y &6bolas de arcilla&r. Vas a ocupas mucha arcilla adelante."
+				""
+				"Toma estas herramientas, te servirán para la &6siguiente misión&r, ten en cuenta que debes &6usarlas con cuidado&r."
+			]
 			id: "4A0C0031720C92A4"
-			rewards: [{
-				count: 8
-				id: "42A1484D94DC6DCF"
-				item: "minecraft:torch"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "42A1484D94DC6DCF"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "6C31350990E8A4C9"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_knife"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								AttackDamage: 2.0f
+								AttackSpeed: 2.8f
+								Damage: 0
+								MaxDamage: 383
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2C28CF52D8F52E53"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_saw"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
+							GT.Tool: {
+								AttackDamage: 1.0f
+								AttackSpeed: -2.8f
+								Damage: 0
+								MaxDamage: 383
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					count: 32L
@@ -45,6 +91,18 @@
 					title: "Troncos"
 					type: "item"
 				}
+				{
+					count: 64L
+					id: "1A1592D2E08A46B0"
+					item: { Count: 64, id: "minecraft:sand" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "336CC2A544AB378E"
+					item: { Count: 64, id: "minecraft:clay_ball" }
+					type: "item"
+				}
 			]
 			title: "Recoge Materiales"
 			x: 0.0d
@@ -63,7 +121,7 @@
 				type: "item"
 			}]
 			title: "Árbol de Caucho"
-			x: 1.5d
+			x: 2.0d
 			y: -1.5d
 		}
 		{
@@ -93,6 +151,12 @@
 					id: "5A57826C0F7B55C6"
 					item: "minecraft:cooked_beef"
 					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2918065B6774B0F7"
+					table_id: 4843678763669674976L
+					type: "random"
 				}
 			]
 			subtitle: "Herramientas Modulares"
@@ -137,7 +201,14 @@
 			y: -3.0d
 		}
 		{
+			description: ["Tu primera misión es encontrar una manera de &6hacer herramientas&r, quizás esto te ayude."]
 			id: "26E90CA7DEA3F8FA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "10604DDB12519080"
+				table_id: 4843678763669674976L
+				type: "random"
+			}]
 			subtitle: "Mesitas del Tinkers"
 			tasks: [
 				{
@@ -162,27 +233,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["4A0C0031720C92A4"]
-			description: ["Debes ser &6rápido&r, quizas aún no lo hayas notado pero vas a tener &6una noche dificil&r, busca recursos rápido y armate un refugio sencillo, puedes &6cavar un agujero&r y pasar la noche por hoy."]
-			id: "35252902AF656EB2"
-			rewards: [{
-				count: 8
-				id: "7EA12C41FCADA9E1"
-				item: "minecraft:torch"
-				type: "item"
-			}]
-			shape: "hexagon"
-			subtitle: "Escondete"
-			tasks: [{
-				id: "3F8B64556EEA94A0"
-				title: "Una Noche Realmente Oscura"
-				type: "checkmark"
-			}]
-			title: "¿Una noche muy Oscura?"
-			x: 1.5d
-			y: 0.0d
-		}
-		{
 			dependencies: [
 				"7C3F28A5CDE4EB1B"
 				"26E90CA7DEA3F8FA"
@@ -193,17 +243,25 @@
 				"Pero por el momento &6no puedes hacerla&r, esta se puede realizar con bloques de aleaciones que aun no tienes a tu disposición. Regresa cuando puedas crear &6bloques de bronze&r."
 			]
 			id: "24DF63E9A0D8F007"
-			rewards: [{
-				id: "766BA24DCD3444E8"
-				item: {
-					Count: 1
-					id: "tconstruct:tool_handle"
-					tag: {
-						Material: "tconstruct:steel"
+			rewards: [
+				{
+					id: "766BA24DCD3444E8"
+					item: {
+						Count: 1
+						id: "tconstruct:tool_handle"
+						tag: {
+							Material: "tconstruct:steel"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					exclude_from_claim_all: true
+					id: "21D88E2C8F268D26"
+					table_id: 4843678763669674976L
+					type: "choice"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "\"Tool Forge\""
 			tasks: [{
@@ -219,6 +277,237 @@
 			}]
 			x: 1.5d
 			y: -4.5d
+		}
+		{
+			dependencies: [
+				"4A0C0031720C92A4"
+				"57960D7C89D30B6E"
+			]
+			description: [
+				"Felicidades, has hecho tu primer multibloque de muchos."
+				""
+				"Quizás quieras construir más para &6acelerar un poco&r las cosas."
+			]
+			icon: "gtceu:primitive_clay_blast_furnace"
+			id: "230F9DE2AE63866C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F6F676B43A0D646"
+				table_id: 4843678763669674976L
+				type: "choice"
+			}]
+			subtitle: "PCBF"
+			tasks: [
+				{
+					count: 304L
+					id: "5A9EF7A12C65E318"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 84L
+					id: "12C9D190349DE166"
+					item: { Count: 84, id: "minecraft:brick" }
+					type: "item"
+				}
+				{
+					id: "2C074E33072659B2"
+					item: "gtceu:primitive_clay_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 55L
+					id: "06E30A55C7BBA471"
+					item: { Count: 55, id: "minecraft:mud_bricks" }
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "014E60E07B7F3970"
+					item: { Count: 21, id: "minecraft:bricks" }
+					type: "item"
+				}
+			]
+			title: "Primitive Clay Blast Furnace"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["230F9DE2AE63866C"]
+			icon: "gtceu:primitive_clay_blast_furnace"
+			id: "65F9FBFED01F57FE"
+			shape: "hexagon"
+			subtitle: "Acelerando las Cosas"
+			tasks: [
+				{
+					count: 4L
+					id: "3D6C65ABBD58CC72"
+					item: "gtceu:primitive_clay_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 220L
+					id: "0242332607A0FF24"
+					item: { Count: 220, id: "minecraft:mud_bricks" }
+					type: "item"
+				}
+				{
+					count: 84L
+					id: "6BA3A5813380CBB7"
+					item: { Count: 84, id: "minecraft:bricks" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4A0C0031720C92A4"]
+			description: ["Desgraciadamente no puedes usar el horno, debido a esto tendrás que craftear &6una fogata&r para hacer lingotes que te servirán en el &6PCBF&r"]
+			id: "57960D7C89D30B6E"
+			rewards: [{
+				id: "76D942CF7DB1FE35"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			subtitle: "No hay hornos :O, por ahora..."
+			tasks: [{
+				count: 2L
+				id: "3B2722A1C4130338"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			title: "Lingotes a la Leña"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"230F9DE2AE63866C"
+				"57960D7C89D30B6E"
+			]
+			description: ["Ahora con tu primer mutibloque puedes crear &6Charred Coke Oven Bricks&r, los cuales te servirán para armar tu segundo multibloque, el Coke Oven, este te servirá para conseguir &l&8Carbón Vegetal&r&r y &l&8Carbón de Coke&r&r para usarlos en tu &6PCBF&r, quizás te interese hacer varios de estos."]
+			id: "6F76D07628E02721"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4BE2589B7EBF736D"
+				table_id: 4843678763669674976L
+				type: "choice"
+			}]
+			subtitle: "Carbón Vegetal, ¿Gratis?"
+			tasks: [
+				{
+					id: "4B80B5397396D156"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "2787E4349FB78C61"
+					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+			]
+			title: "Coke Oven"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["230F9DE2AE63866C"]
+			id: "613F9F3F8EE51E1B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "768303FDD8F0809B"
+				table_id: 4843678763669674976L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					count: 64L
+					id: "60C6C674E1EA11BB"
+					item: { Count: 64, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "03E8D82344F00421"
+					item: { Count: 64, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "37C42031B26C7437"
+					item: { Count: 64, id: "gtceu:tin_ingot" }
+					type: "item"
+				}
+			]
+			title: "Consigue unos Lingotes"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"6F76D07628E02721"
+				"230F9DE2AE63866C"
+				"3706B69E65410B5B"
+			]
+			description: [
+				"Ahora que puedes hacer &6lingotes de hierro&r con tu &6PCBF&r, puedes &6crear tolvas&r para hacer que la madera entre automaticamente al Coke Oven, ten cuidado con la posición de la tolva ya que el multibloque acepta entrada/salida de items y fluidos(&6creosote oil&r) por la &6misma entrada&r."
+				""
+				"Intenta poner una entrada en la parte superior y otra en la inferior, arriba pon la tolva y debajo un cofre o cualquier almacenamiento y solo debes preocuparte por llenarlo de madera."
+				""
+				"El Multibloque tiene salidas &lautomáticas&r."
+			]
+			id: "6EF65E1D86883BF0"
+			rewards: [{
+				id: "79B62A9708BD1156"
+				item: "gtceu:coke_oven_hatch"
+				type: "item"
+			}]
+			subtitle: "¡Que Emoción!"
+			tasks: [{
+				count: 2L
+				id: "70219312A0630881"
+				item: { Count: 2, id: "gtceu:coke_oven_hatch" }
+				type: "item"
+			}]
+			title: "Semi-Automatización"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6F76D07628E02721"]
+			description: [
+				"La manera más facil de hacer placas por el momento es usando un &6hammer de GTm&r de cualquier material en una mesa de crafteo."
+				""
+				"Usa el EMI para ayudarte de las recetas, pon tu cursor encima de algún objeto y &6dale click o dale click a la letra R&r en el teclado, debería mostrarte la recetas, de igual manera si haces lo mismo pero con el &6click derecho o con la 6etra U&r, podrás ver sus usos, si es que los tiene."
+			]
+			id: "3706B69E65410B5B"
+			rewards: [
+				{
+					count: 4
+					id: "65EBCCC6DCE674BC"
+					item: "gtceu:iron_plate"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "10DC0952C2807300"
+					table_id: 4843678763669674976L
+					type: "random"
+				}
+			]
+			shape: "pentagon"
+			subtitle: "Oh No"
+			tasks: [{
+				count: 16L
+				id: "7C20CA0213C8FACB"
+				item: "gtceu:iron_plate"
+				type: "item"
+			}]
+			title: "Placas de Hierro"
+			x: -4.0d
+			y: 4.5d
 		}
 	]
 	title: "Edad Primitiva"

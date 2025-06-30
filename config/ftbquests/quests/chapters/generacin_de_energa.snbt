@@ -1,0 +1,35 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "generacin_de_energa"
+	group: ""
+	icon: "gtse:zpm_advanced_fusion_reactor"
+	id: "0F94C8439FC04820"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "0D89C37B98E0B2D3"
+		rewards: [
+			{
+				id: "7B2BEA662C07A956"
+				item: "create:large_water_wheel"
+				type: "item"
+			}
+			{
+				exclude_from_claim_all: true
+				id: "718596A44798DD6D"
+				table_id: 4843678763669674976L
+				type: "random"
+			}
+		]
+		tasks: [{
+			count: 4L
+			id: "3240DC592E3232CD"
+			item: { Count: 4, id: "create:water_wheel" }
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Generación de Energía"
+}

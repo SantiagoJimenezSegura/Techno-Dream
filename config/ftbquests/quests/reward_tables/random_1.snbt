@@ -11,6 +11,23 @@
 	}
 	loot_size: 1
 	order_index: 2
-	rewards: [ ]
+	rewards: [
+		{ count: 64, item: "minecraft:oak_log" }
+		{ count: 64, item: "minecraft:spruce_log" }
+		{ count: 64, item: "minecraft:birch_log" }
+		{ count: 64, item: "minecraft:jungle_log" }
+		{ count: 64, item: "minecraft:acacia_log" }
+		{ count: 64, item: "minecraft:dark_oak_log" }
+		{ count: 64, item: "minecraft:cobblestone" }
+		{ count: 4, item: "minecraft:oak_door" }
+		{ count: 64, item: "minecraft:cherry_log" }
+		{ count: 4, item: "minecraft:birch_door" }
+		{ count: 64, item: "minecraft:mangrove_log" }
+		{ count: 4, item: "minecraft:dark_oak_door" }
+		{ count: 64, item: "minecraft:stone" }
+		{ count: 64, item: "minecraft:cobblestone" }
+		{ count: 64, item: "minecraft:deepslate" }
+		{ count: 8, item: "minecraft:wheat_seeds" }
+	]
 	title: "Edad Primitiva"
 }

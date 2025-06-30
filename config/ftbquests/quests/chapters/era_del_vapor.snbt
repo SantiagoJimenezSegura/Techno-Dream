@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "era_del_vapor"
 	group: "3F6FC1AC3A5D652E"
+	icon: "create:steam_engine"
 	id: "3EE909732D80C98E"
 	order_index: 2
 	quest_links: [ ]
