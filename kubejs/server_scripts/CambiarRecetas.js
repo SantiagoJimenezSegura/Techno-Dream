@@ -1,12 +1,5 @@
 ServerEvents.recipes(event => {	
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
-=======
->>>>>>> 0d5d0362a05a19da8df3be31a83a64ef736cd57e
   // Shaped mud recipe (returns empty bucket)
->>>>>>> b72a258ad13452280ec0da6015d655e9424abd27
   event.shaped(
     Item.of('minecraft:mud', 8),
     [
@@ -35,4 +28,34 @@ ServerEvents.recipes(event => {
     }
   );
 
+  // Remove old steam pressurizer recipe
+  event.remove({ id: 'gtceu:shaped/steam_pressurizer' });
+
+  // Add new steam pressurizer recipe
+  event.shaped(
+    'gtca:steam_pressurizer',
+    [
+      'BPB',
+      'CTC',
+      'WHW'
+    ],
+    {
+      B: 'gtceu:lv_electric_pump',
+      P: 'gtceu:lv_electric_piston',
+      C: '#gtceu:circuits/lv',
+      T: 'gtceu:steel_large_fluid_pipe',
+      W: 'gtceu:tin_single_cable',
+      H: 'gtceu:lv_machine_hull'
+    }
+  );
+
+  // Remove old high pressure steam recipe
+  event.remove({ id: 'gtceu:steam_pressurizer/hp_steam' });
+
+  // Add new high pressure steam recipe
+  event.recipes.gtceu.steam_pressurizer('hp_steam')
+    .inputFluids(Fluid.of('gtceu:steam', 6400))
+    .outputFluids(Fluid.of('gtca:high_pressure_steam', 640))
+    .duration(150)
+    .EUt(32);
 });
