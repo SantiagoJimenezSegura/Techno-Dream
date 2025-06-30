@@ -55,7 +55,8 @@ ServerEvents.recipes(event => {
   // Add new high pressure steam recipe
   event.recipes.gtceu.steam_pressurizer('hp_steam')
     .inputFluids(Fluid.of('gtceu:steam', 6400))
-    .outputFluids(Fluid.of('gtca:high_pressure_steam', 640))
-    .duration(150)
-    .EUt(32);
+    .outputFluids(Fluid.of('gtca:high_pressure_steam', 256))
+    .duration(1)
+    .EUt(32)
+
 });
