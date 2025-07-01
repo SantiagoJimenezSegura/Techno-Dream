@@ -21,8 +21,13 @@ ServerEvents.recipes(event => {
 })
 
     //RECETAS MULTIBLOCK
-
-
+ServerEvents.recipes(event => { 
+  event.recipes.gtceu.steam_pressurizer('hp_steam')
+    .inputFluids(Fluid.of('gtceu:steam', 6400))
+    .outputFluids(Fluid.of('gtca:high_pressure_steam', 256))
+    .duration(1)
+    .EUt(32)
+})
 
     //RECETAS CRAFTING TABLE
 
@@ -60,6 +65,22 @@ event.shapeless(
     }
   )
 
+    event.shaped(
+    'gtca:steam_pressurizer',
+    [
+      'BPB',
+      'CTC',
+      'WHW'
+    ],
+    {
+      B: 'gtceu:lv_electric_pump',
+      P: 'gtceu:lv_electric_piston',
+      C: '#gtceu:circuits/lv',
+      T: 'gtceu:steel_large_fluid_pipe',
+      W: 'gtceu:tin_single_cable',
+      H: 'gtceu:lv_machine_hull'
+    }
+  )
 })
 
 ServerEvents.recipes(event => {
