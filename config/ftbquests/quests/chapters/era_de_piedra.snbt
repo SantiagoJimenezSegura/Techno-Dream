@@ -290,18 +290,41 @@
 			]
 			icon: "gtceu:primitive_clay_blast_furnace"
 			id: "230F9DE2AE63866C"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0F6F676B43A0D646"
-				table_id: 4843678763669674976L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0F6F676B43A0D646"
+					table_id: 4843678763669674976L
+					type: "choice"
+				}
+				{
+					id: "464406F150751947"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_wrench"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "PCBF"
 			tasks: [
 				{
-					count: 304L
+					count: 236L
 					id: "5A9EF7A12C65E318"
-					item: "minecraft:clay_ball"
+					item: "gtceu:charred_mud_ingot"
 					type: "item"
 				}
 				{
@@ -363,20 +386,45 @@
 		}
 		{
 			dependencies: ["4A0C0031720C92A4"]
-			description: ["Desgraciadamente no puedes usar el horno, debido a esto tendrás que craftear &6una fogata&r para hacer lingotes que te servirán en el &6PCBF&r"]
+			description: [
+				"Desgraciadamente no puedes usar el horno, debido a esto tendrás que craftear &6una fogata&r para hacer lingotes que te servirán en el &6PCBF&r"
+				""
+				"Toma esta &6Charred Mud Gear&r para armar el controlador de tu PCBF, ya que aún no puedes hacer lingotes"
+			]
 			id: "57960D7C89D30B6E"
-			rewards: [{
-				id: "76D942CF7DB1FE35"
-				item: "minecraft:campfire"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "76D942CF7DB1FE35"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "33B46B52D17D8FF5"
+					item: "gtceu:mud_mixture_dust"
+					type: "item"
+				}
+				{
+					id: "2532CC1EE8D2A623"
+					item: "gtceu:charred_mud_gear"
+					type: "item"
+				}
+			]
 			subtitle: "No hay hornos :O, por ahora..."
-			tasks: [{
-				count: 2L
-				id: "3B2722A1C4130338"
-				item: "minecraft:campfire"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 2L
+					id: "3B2722A1C4130338"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4A4A0DCA566C0DA7"
+					item: { Count: 16, id: "gtceu:mud_mixture_dust" }
+					type: "item"
+				}
+			]
 			title: "Lingotes a la Leña"
 			x: -2.0d
 			y: 1.5d
@@ -385,6 +433,7 @@
 			dependencies: [
 				"230F9DE2AE63866C"
 				"57960D7C89D30B6E"
+				"3706B69E65410B5B"
 			]
 			description: ["Ahora con tu primer mutibloque puedes crear &6Charred Coke Oven Bricks&r, los cuales te servirán para armar tu segundo multibloque, el Coke Oven, este te servirá para conseguir &l&8Carbón Vegetal&r&r y &l&8Carbón de Coke&r&r para usarlos en tu &6PCBF&r, quizás te interese hacer varios de estos."]
 			id: "6F76D07628E02721"
@@ -476,7 +525,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["6F76D07628E02721"]
+			dependencies: [
+				"230F9DE2AE63866C"
+				"613F9F3F8EE51E1B"
+			]
 			description: [
 				"La manera más facil de hacer placas por el momento es usando un &6hammer de GTm&r de cualquier material en una mesa de crafteo."
 				""
@@ -507,7 +559,7 @@
 			}]
 			title: "Placas de Hierro"
 			x: -4.0d
-			y: 4.5d
+			y: 3.0d
 		}
 	]
 	title: "Edad Primitiva"
