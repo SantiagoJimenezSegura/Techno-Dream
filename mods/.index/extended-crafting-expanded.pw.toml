@@ -1,0 +1,13 @@
+filename = 'ExtendedCrafting-1.20.1-6.1.5u.jar'
+name = 'Extended Crafting: Expanded'
+side = 'both'
+
+[download]
+hash = '10ceb7bd999c46e03816aacc6dd313c5e68b6bd1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5613251
+project-id = 1017786

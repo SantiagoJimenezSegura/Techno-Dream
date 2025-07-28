@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "botania"
+	group: "2B390A58D90D1CCB"
+	icon: "botania:third_eye"
+	id: "7B058F5985A4DD31"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Botania"
+}

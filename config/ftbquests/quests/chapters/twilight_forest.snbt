@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "twilight_forest"
+	group: "2B390A58D90D1CCB"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "18BD90DB11474668"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Twilight Forest"
+}

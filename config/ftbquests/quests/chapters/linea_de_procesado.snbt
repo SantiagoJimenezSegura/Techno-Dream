@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "linea_de_procesado"
 	group: "1B5043855EFD55F5"
+	icon: "gtse:luv_processing_array"
 	id: "3155C728BB1CE817"
 	order_index: 0
 	quest_links: [ ]

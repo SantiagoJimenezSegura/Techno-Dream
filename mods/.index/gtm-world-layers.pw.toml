@@ -1,0 +1,13 @@
+filename = 'gtworldgenlayers-1.0.0.jar'
+name = 'GTM World Layers'
+side = 'both'
+
+[download]
+hash = '88c3d18f2007e15a84ef60429d2073ac496c5e44'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6051233
+project-id = 1171441

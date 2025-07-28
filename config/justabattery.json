@@ -1,0 +1,16 @@
+{
+  "_battery_capacity": "This defines the battery capacity per cell. When combining cells, the values are multiplied. Basically the real capacity is this value times the level. Range: 1-100_000 Default: 20_000",
+  "battery_capacity": 20000,
+  "_battery_transfer": "This defines the max transfer rate per cell. This can be increased  and with every increase the value is added. Like the battery capacity, but with trace_width as defining value. Range: 0-100_000 Default: 500",
+  "battery_transfer": 500,
+  "_battery_max_level": "How much times can the battery be upgrades? Keep in mind that with every level you get #battery_capacity more energy, that can be stored. Range: 1-20_000 Default: 100",
+  "battery_max_level": 100,
+  "_battery_max_trace_width": "How much times can the battery trace width be upgrades? Keep in mind that with every increase you get #battery_transfer more energy, that can be transferred per tick. Range: 1-20_000 Default: 100",
+  "battery_max_trace_width": 100,
+  "_allow_block_discharge": "The following value (true or false) defines if a battery is capable of extracting energy out of any energetic block.",
+  "allow_block_discharge": true,
+  "_chargeup_creeper_energy_required": "How much energy is required to convert a creeper to a powered one. Use any negative number to disable this feature.",
+  "chargeup_creeper_energy_required": 100000,
+  "_charged_up_battery_on_craft": "If enabled, the crafted battery (only single battery, not combined ones) are charged fully up. Default: false",
+  "charged_up_battery_on_craft": false
+}

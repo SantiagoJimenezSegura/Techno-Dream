@@ -1,13 +1,13 @@
-filename = 'laserio-uel-1.4.1.jar'
-name = 'LaserIO Unofficial Extended Life'
+filename = 'laserio-uel-1.5.0.jar'
+name = 'LaserIO UEL'
 side = 'both'
 
 [download]
-hash = '93b267cfbf136cc1a9bdf070ab3ea9c56a409736'
+hash = '1bc52bd6a94164b2558f2017bd5b4a78cef1725e'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6310241
+file-id = 6773950
 project-id = 1168178

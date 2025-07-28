@@ -1,0 +1,13 @@
+filename = 'kubejspowahreborn-1.20.1-1.0.0.jar'
+name = 'KubeJS Powah Reborn'
+side = 'both'
+
+[download]
+hash = 'db7ace38e3d8791dedaba83455bb70542ff030ac'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6685291
+project-id = 1292374

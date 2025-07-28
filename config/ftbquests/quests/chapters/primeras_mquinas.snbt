@@ -3,10 +3,19 @@
 	default_quest_shape: ""
 	filename: "primeras_mquinas"
 	group: "3F6FC1AC3A5D652E"
-	icon: "tconstruct:smeltery_controller"
+	icon: "create:steam_engine"
 	id: "410F404928E39BCE"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
-	title: "Metalurgia"
+	quests: [{
+		id: "20E7AFFE4C4D472C"
+		tasks: [{
+			id: "765209B1BD548086"
+			item: "minecraft:stripped_oak_wood"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Nivel 0.5 - Era del Vapor"
 }

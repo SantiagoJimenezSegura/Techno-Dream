@@ -1,0 +1,13 @@
+filename = 'blasmatech-1.20.1-1.1.4-all.jar'
+name = 'Blasma Tech'
+side = 'both'
+
+[download]
+hash = 'f3e1a6dc1ff6f858b3d4c68cf6558015180c4496'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5417722
+project-id = 976257

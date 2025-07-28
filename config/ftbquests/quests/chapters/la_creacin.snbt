@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "la_creacin"
-	group: "7FFACB28C131871D"
+	group: "3F6FC1AC3A5D652E"
 	icon: "biomesoplenty:origin_grass_block"
 	id: "15BAA7C58DC00BC0"
 	order_index: 0
@@ -173,7 +173,7 @@
 							tic_persistent: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 3.0f
-								"tconstruct:attack_damage": 7.475f
+								"tconstruct:attack_damage": 7.13f
 								"tconstruct:attack_speed": 1.68f
 								"tconstruct:durability": 1163.6624f
 								"tconstruct:harvest_tier": "minecraft:diamond"
@@ -267,7 +267,7 @@
 				""
 				"&6Progreso&r: Aqui verás tu progreso, si te sientes perdido con lo que hacer puedes venir aqui y ver el progreso del modpack, así sabrás que el lo siguiente en la lista. También podras ver información extra no mostrada en otras partes como los circuitos, revisa esta pagina, quizás haya cosas interesantes."
 				""
-				"&6Misiones&r: Existen &63 tipos&r de misiones:"
+				"&6Misiones&r: Existen &62 tipos&r de misiones:"
 				""
 				"&6Principales&r: De forma circular, misiones que te llevaran através del modpack para completarlo. "
 				""

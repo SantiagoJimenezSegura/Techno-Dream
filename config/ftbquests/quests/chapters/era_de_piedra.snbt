@@ -5,7 +5,7 @@
 	group: "3F6FC1AC3A5D652E"
 	icon: "create:large_cogwheel"
 	id: "3B5580E3A803AD4E"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -103,10 +103,16 @@
 					item: { Count: 64, id: "minecraft:clay_ball" }
 					type: "item"
 				}
+				{
+					count: 64L
+					id: "06C658451A4EC2AA"
+					item: { Count: 64, id: "minecraft:andesite" }
+					type: "item"
+				}
 			]
 			title: "Recoge Materiales"
 			x: 0.0d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4A0C0031720C92A4"]
@@ -122,7 +128,7 @@
 			}]
 			title: "Árbol de Caucho"
 			x: 2.0d
-			y: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["26E90CA7DEA3F8FA"]
@@ -198,7 +204,7 @@
 			]
 			title: "Primeras Herramientas"
 			x: 0.0d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			description: ["Tu primera misión es encontrar una manera de &6hacer herramientas&r, quizás esto te ayude."]
@@ -209,6 +215,7 @@
 				table_id: 4843678763669674976L
 				type: "random"
 			}]
+			size: 1.5d
 			subtitle: "Mesitas del Tinkers"
 			tasks: [
 				{
@@ -230,7 +237,7 @@
 			]
 			title: "Estación y Constructor"
 			x: 0.0d
-			y: -6.0d
+			y: -1.6d
 		}
 		{
 			dependencies: [
@@ -275,8 +282,8 @@
 				match_nbt: false
 				type: "item"
 			}]
-			x: 1.5d
-			y: -4.5d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -319,7 +326,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "PCBF"
+			subtitle: "AHAP"
 			tasks: [
 				{
 					count: 236L
@@ -351,7 +358,7 @@
 					type: "item"
 				}
 			]
-			title: "Primitive Clay Blast Furnace"
+			title: "Alto Horno de Arcilla Primitivo"
 			x: 0.0d
 			y: 3.0d
 		}
@@ -470,6 +477,8 @@
 				table_id: 4843678763669674976L
 				type: "choice"
 			}]
+			size: 1.5d
+			subtitle: "Tus primeros lingotes"
 			tasks: [
 				{
 					count: 64L
@@ -490,7 +499,7 @@
 					type: "item"
 				}
 			]
-			title: "Consigue unos Lingotes"
+			title: "Desbloquea lingotes"
 			x: 0.0d
 			y: 6.0d
 		}
@@ -501,7 +510,7 @@
 				"3706B69E65410B5B"
 			]
 			description: [
-				"Ahora que puedes hacer &6lingotes de hierro&r con tu &6PCBF&r, puedes &6crear tolvas&r para hacer que la madera entre automaticamente al Coke Oven, ten cuidado con la posición de la tolva ya que el multibloque acepta entrada/salida de items y fluidos(&6creosote oil&r) por la &6misma entrada&r."
+				"Ahora que puedes hacer &6lingotes de hierro&r con tu &6AHAP&r, puedes &6crear tolvas&r para hacer que la madera entre automaticamente al Coke Oven, ten cuidado con la posición de la tolva ya que el multibloque acepta entrada/salida de items y fluidos(&6creosote oil&r) por la &6misma entrada&r."
 				""
 				"Intenta poner una entrada en la parte superior y otra en la inferior, arriba pon la tolva y debajo un cofre o cualquier almacenamiento y solo debes preocuparte por llenarlo de madera."
 				""
@@ -549,7 +558,7 @@
 					type: "random"
 				}
 			]
-			shape: "pentagon"
+			shape: "hexagon"
 			subtitle: "Oh No"
 			tasks: [{
 				count: 16L
@@ -558,9 +567,573 @@
 				type: "item"
 			}]
 			title: "Placas de Hierro"
-			x: -4.0d
+			x: -3.5d
 			y: 3.0d
 		}
+		{
+			dependencies: ["613F9F3F8EE51E1B"]
+			id: "40C31C7D7AABBF69"
+			size: 1.3d
+			subtitle: "Las primeritas pero no últimas"
+			tasks: [
+				{
+					id: "7F19BBE3B7A40C0D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wrenches"
+						}
+					}
+					title: "Cualquier Llave Inglesa"
+					type: "item"
+				}
+				{
+					id: "5CE6EDC9001F705F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/saws"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D577291C8B68A39"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wire_cutters"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "086BDF9E651F38D4"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/hammers"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5A926B1F9E0F5266"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mortars"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "39243894F5FDD44F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/files"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7ACCFB1D1FDB4B25"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/screwdrivers"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Tus Herramientas"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["40C31C7D7AABBF69"]
+			icon: "gtceu:prospector.luv"
+			id: "0CFCB81D9ED6960C"
+			shape: "pentagon"
+			subtitle: "Rastrea Minerales"
+			tasks: [{
+				id: "3269BDA159AB36E7"
+				type: "checkmark"
+			}]
+			title: "Technologia"
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["40C31C7D7AABBF69"]
+			description: [
+				"Por ahora &6no es necesario&r que hagas esta herramienta, normalmente se usa en la creación de &4maintence hatches&r junto con las demás herramientas o para &4quitar los convers&r de la maquinas, aunque esto ultimo puedes hacerlo &6entrando a la interfaz&r > elige la cara de la maquina > abajo a la derecha estará el cover y podrás removerlo."
+				"{@pagebreak}"
+				"&l¡Ahora disponible en &9más colores&r!&r"
+			]
+			id: "70FE13AFDF722B3C"
+			shape: "pentagon"
+			subtitle: "Pa qué?"
+			tasks: [{
+				id: "2BC82E3BFDF6F046"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/crowbars"
+					}
+				}
+				type: "item"
+			}]
+			title: "Crowbarsss"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["40C31C7D7AABBF69"]
+			description: [
+				"Pero mejor que &62&r, sí"
+				"{@pagebreak}"
+			]
+			id: "18D152D104D5701D"
+			shape: "hexagon"
+			subtitle: "Cajones, estos son de cajón en un modpack"
+			tasks: [{
+				id: "00F3BACEEA8CE0C2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "Cualquier Drawer"
+				type: "item"
+			}]
+			title: "Mejor que un cofre, quizá"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["18D152D104D5701D"]
+			id: "02FD2922B4B5A031"
+			shape: "hexagon"
+			subtitle: "Cajones Bluetooth"
+			tasks: [
+				{
+					id: "02B3AE63BEA847FF"
+					item: "functionalstorage:controller_extension"
+					type: "item"
+				}
+				{
+					id: "4475AE25BE969EDF"
+					item: "functionalstorage:storage_controller"
+					type: "item"
+				}
+				{
+					id: "37FAF07AAFD70054"
+					item: {
+						Count: 1
+						id: "functionalstorage:linking_tool"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "42A8D0FEB5EABFBD"
+					item: "functionalstorage:configuration_tool"
+					type: "item"
+				}
+			]
+			title: "Cajones... inalambricos..?"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["18D152D104D5701D"]
+			id: "377693AAE7EA123C"
+			shape: "hexagon"
+			tasks: [{
+				id: "1FE403ECF73724E4"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:framed_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_4"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:compacting_framed_drawer"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_simple_compacting_drawer"
+							}
+						]
+					}
+				}
+				title: "Marcos de Cajón"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"613F9F3F8EE51E1B"
+				"0CFCB81D9ED6960C"
+			]
+			description: ["Consigue algunos materiales preciosos, quizás te sirvan más adelante en la progresión o les encuentres &6algún buen uso&r."]
+			id: "2B0C27DFEE8C63D2"
+			subtitle: "Mira cómo brillan!"
+			tasks: [
+				{
+					count: 32L
+					id: "74E7B23F8B386CBA"
+					item: { Count: 32, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "129F01654DC19589"
+					item: { Count: 32, id: "minecraft:gold_ingot" }
+					type: "item"
+				}
+			]
+			title: "Preciosos"
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["40C31C7D7AABBF69"]
+			id: "5FD35FD46CCC93F0"
+			tasks: [{
+				id: "07B428AC8C0AC2DC"
+				item: "minecraft:birch_planks"
+				type: "item"
+			}]
+			title: "Sobre tus herramientas"
+			x: 5.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"613F9F3F8EE51E1B"
+				"4A0C0031720C92A4"
+			]
+			id: "1B5E63411548CADC"
+			size: 1.5d
+			tasks: [
+				{
+					count: 16L
+					id: "30B4AB235808D921"
+					item: { Count: 32, id: "gtceu:andesite_alloy_ingot" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4F7DE7D91E70883B"
+					item: "gtceu:andesite_alloy_dust"
+					type: "item"
+				}
+			]
+			title: "Aleación de Andesita"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1B5E63411548CADC"]
+			description: [
+				"Tranquilo, &6Create&r es un mod muy amplio con el que puedes hacer muchas cosas, tiene bloques decorativos, calidad de vida he incluso existen addons para mejorar aún más con armaduras, herramientas, etc. "
+				""
+				"Decidí implementarlo aquí para ser la base de la progresión en la &6Edad de Piedra&r y la &6Edad de Vapor&r. Para progresar necesitas jugar con Create, tranquilo porque te iré guiando por lo que debas hacer."
+				"{@pagebreak}"
+				"Si bien hay recetas que &6solo se pueden hacer&r con maquinaria de Create, más adelante podrás usar maquinaria de &6GregTech&r para facilitar más las cosas, pero por ahora es lo que toca, buena suerte."
+			]
+			icon: "create:mechanical_arm"
+			id: "6DD6EC7F62DFA115"
+			rewards: [
+				{
+					id: "3313D294F0100B8D"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "71096A4453E7740D"
+					item: "create:crafting_blueprint"
+					type: "item"
+				}
+			]
+			subtitle: "Waos, Create"
+			tasks: [{
+				id: "40D024B07B8F5C00"
+				type: "checkmark"
+			}]
+			title: "¿¡Create IN GT MODPACK!?"
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1B5E63411548CADC"]
+			description: [
+				"Aún no pueden hacer mejores herramientas, para ello vas a necesitar de la &6Smeltery&r de &6TCs&r, por ahora ten esta cabeza de hierro para seguir progresando."
+				""
+				"Tambien puedes optar por seguir con tu &6pico de piedra&r."
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:pick_head"
+				tag: {
+					Material: "tconstruct:iron"
+				}
+			}
+			id: "6E72A73B70CE3BB5"
+			rewards: [{
+				id: "70F9081C6830D96A"
+				item: {
+					Count: 1
+					id: "tconstruct:pick_head"
+					tag: {
+						Material: "tconstruct:iron"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7EC916DF21473175"
+				type: "checkmark"
+			}]
+			title: "Mejora 2.0"
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"7C3F28A5CDE4EB1B"
+				"2B0C27DFEE8C63D2"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Prueba mejorando tu pico a piedra o pedernal, si es más sencillo para tí puedes seguir con tu pico de madera."
+				""
+				"Consejo:"
+				"Las herramientas de TCs &6son modulares&r y puedes cambiar las partes en &6cualquier momento&r, si no puedes intenta repararla por completo y volver a intentarlo, el material de reparación depende del material principal de la herramienta, en muchos casos el material de la cabeza."
+				""
+				"Támbien cuentan con &6modificadores&r, intenta ponerle &bun diamante&r a tu pico de madera."
+				"{@pagebreak}"
+				"Las mejoras se realizan en la &6misma mesa donde se elaboran las herramientas&r, coloca la herramienta y posteriormete el modificador, he de recordarles que ocupan tener un &6slot libre de modifiación&r para poder agregarlo, consigue slots de modificaión usando tu herramienta, eso hará que suba de nivel."
+			]
+			id: "5F5436B1D7E9D2D8"
+			rewards: [{
+				count: 16
+				id: "4221DE45B9ADD081"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			subtitle: "Támbien es una forma de diamante"
+			tasks: [{
+				id: "5345BF20B806CF5E"
+				item: {
+					Count: 1
+					id: "tconstruct:pick_head"
+					tag: {
+						Material: "tconstruct:flint"
+					}
+				}
+				type: "item"
+			}]
+			title: "Mejora 1.0"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"1B5E63411548CADC"
+				"40C31C7D7AABBF69"
+			]
+			description: ["Las &6carcadas de andesita&r te ayudarán a realizar tus primeras máquinas en la edad de piedra."]
+			id: "08B12CF4B6ED79A0"
+			size: 1.5d
+			subtitle: "Machine Hulls Primitivos"
+			tasks: [{
+				count: 16L
+				id: "443FEB94E9552E3D"
+				item: { Count: 16, id: "create:andesite_casing" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"08B12CF4B6ED79A0"
+				"5FD35FD46CCC93F0"
+			]
+			id: "2C8FC6EC4298F008"
+			size: 1.5d
+			tasks: [{
+				id: "4A6806F947FC2001"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "Prensa Mécanica"
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"2C8FC6EC4298F008"
+				"3706B69E65410B5B"
+			]
+			description: ["Ahora puedes hacer placas de manera &6más eficiente&r, pero solo puedes hacer &6placas de hierro, cobre y estaño&r y desafortunadamente no son muy rápidas de hacer."]
+			id: "05BEF00298FF45E5"
+			subtitle: "Ahora eres más eficiente"
+			tasks: [
+				{
+					count: 16L
+					id: "168C03ACD55F4042"
+					item: "gtceu:iron_plate"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "76444604BDEF9879"
+					item: "gtceu:copper_plate"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "16995E6335EB2783"
+					item: "gtceu:tin_plate"
+					type: "item"
+				}
+			]
+			title: "Placas, placas, placas"
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2C8FC6EC4298F008"]
+			id: "620D38C2F7D28F00"
+			tasks: [
+				{
+					id: "07B4889801EB3307"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					count: 63L
+					id: "69D25B5A64D7A683"
+					item: { Count: 63, id: "gtceu:wrought_iron_nugget" }
+					type: "item"
+				}
+			]
+			title: "Pepitas de Hierro Forjado"
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2C8FC6EC4298F008"]
+			id: "340E0D7FF0B58CD1"
+			tasks: [{
+				id: "7602BC32FD1ECB1C"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"1B5E63411548CADC"
+				"340E0D7FF0B58CD1"
+			]
+			id: "50764FD6D8F17D17"
+			tasks: [{
+				id: "0A6A16135FC515C8"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"620D38C2F7D28F00"
+				"6D990E1404A09D26"
+			]
+			description: [
+				"Si quieres &6mejorar tus herramientas&r o &6comienzas a necesitar&r de Hierro Forjado, por ahora esta es tu &6única manera&r de conseguirlo, no es ni por cerca eficiente pero &6pronto&r podrás mejorar eso."
+				"{@pagebreak}"
+				"En un cuenco de &6Create&r mete &l10 pepitas&r de &6Hierro Forjado&r y aplastalas con una prensa mécanica, felicidades conseguiste tu primer lingote de &6Hierro Forjado&r."
+				""
+				"Para esta misión ocupas hacer &610 lingotes&r, un total de 100 pepitas, buena suerte."
+			]
+			icon: "gtceu:wrought_iron_ingot"
+			id: "0A3BEDB181F1D75C"
+			subtitle: "Pero madre mía esa receta"
+			tasks: [
+				{
+					count: 10L
+					id: "300A0A6C9D29B95B"
+					item: "gtceu:wrought_iron_ingot"
+					type: "item"
+				}
+				{
+					count: 100L
+					id: "53DDB67DE1A1B17E"
+					item: { Count: 63, id: "gtceu:wrought_iron_nugget" }
+					type: "item"
+				}
+			]
+			title: "Forjando Hierro"
+			x: 9.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"2C8FC6EC4298F008"
+				"05BEF00298FF45E5"
+			]
+			description: ["Por ahora no tienes manera de &lacumular&r&6 lava&r en un tanque, ha menos que te las arregles de otra forma en este etapa ha usar varias cubetas de lava, cuando consigas bronce podrás hacer un &6Drum (Barril) de bronce&r, el cual puede contener &6lava&r en su &6interior&r."]
+			id: "6D990E1404A09D26"
+			rewards: [{
+				count: 2
+				id: "3F8CCB16C2BADC79"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			subtitle: "Cuidado, liquido caliente"
+			tasks: [{
+				id: "3E849819899D88AB"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			title: "Suministro de Lava"
+			x: 7.0d
+			y: 6.5d
+		}
 	]
-	title: "Edad Primitiva"
+	title: "Nivel 0 - Era de Priedra"
 }

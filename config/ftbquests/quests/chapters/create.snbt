@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: "2B390A58D90D1CCB"
+	icon: "create:cuckoo_clock"
+	id: "54235C44EB7C3415"
+	order_index: 6
+	quest_links: [ ]
+	quests: [ ]
+	title: "Create"
+}

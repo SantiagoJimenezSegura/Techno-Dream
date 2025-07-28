@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "almacenamiento_bsico"
+	group: ""
+	icon: "toms_storage:ts.crafting_terminal"
+	id: "7498E3D939D557F6"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "Almacenamiento Básico"
+}

@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.assembler('mv_bedrock_ore_miner')
+  ///RECETA ASSEMBLER///  
+  event.recipes.gtceu.assembler('mv_bedrock_ore_miner')
         .itemInputs(
             '2x gtceu:hv_machine_hull',
             '8x gtceu:stainless_steel_frame',
@@ -29,17 +30,25 @@ ServerEvents.recipes(event => {
     .EUt(32)
 })
 
+
     //RECETAS CRAFTING TABLE
 
 ServerEvents.recipes(event => {
-event.shapeless(
-  Item.of('gtceu:mud_mixture_dust', 3), // arg 1: output
+
+///RECETAS SIN FORMA///
+
+  event.shapeless(
+  Item.of('gtceu:mud_mixture_dust', 3), // Salida de item
   [
     'minecraft:water_bucket',
-    'minecraft:clay_ball',            // arg 2: the array of inputs
+    'minecraft:clay_ball',            // Entrada de items
     '3x minecraft:packed_mud'
   ]
 )
+  
+
+/// RECETAS CON FORMA///
+
   event.shaped(
     Item.of('minecraft:mud', 8),
     [
@@ -51,9 +60,9 @@ event.shapeless(
       D: 'minecraft:dirt',
       W: 'minecraft:water_bucket'
     }
-  ).replaceIngredient('minecraft:water_bucket', Item.of('minecraft:bucket')); // returns empty
+  ).replaceIngredient('minecraft:water_bucket', Item.of('minecraft:bucket')); // Regresa vacio
 
-  // Add custom packed mud recipe using mallet
+  // Receta custom del packed mud
   event.shaped(
     'minecraft:packed_mud',
     [
@@ -85,31 +94,30 @@ event.shapeless(
 
 ServerEvents.recipes(event => {
 event.shaped(
-  Item.of('minecraft:mud_bricks', 1), // arg 1: output
+  Item.of('minecraft:mud_bricks', 1), 
   [
     'AA',
-    'AA' // arg 2: the shape (array of strings)
+    'AA' 
   ],
   {
     A: 'gtceu:charred_mud_ingot'
 
   }
 )
-event.shaped(
-  Item.of('gtceu:primitive_clay_blast_furnace', 1), // arg 1: output
-  [
-    'AAA',
-    'ABA', // arg 2: the shape (array of strings)
-    'CCC'
-  ],
-  {
-    A: 'minecraft:mud_bricks',
-    B: '#forge:tools/mallets',
-    C: 'minecraft:bricks'
-    //D: 'gtceu:charred_mud_ingot'
 
-  }
-)
+event.shaped(
+    Item.of('gtceu:compressed_clay', 4), // Marcando 4 items
+    [
+      'PPP',
+      'PWP',
+      'PPP'
+    ],
+    {
+      P: 'minecraft:clay_ball',
+      W: 'gtceu:brick_wooden_form'
+    }
+  )
+
 })
 
 // RECETAS CREATE
@@ -122,7 +130,8 @@ event.shaped(
 
 // RECETAS FOGATA
 ServerEvents.recipes(event => {
-event.campfireCooking('gtceu:charred_mud_ingot', 'gtceu:mud_mixture_dust', 0, 400)
-event.campfireCooking('gtceu:wrought_iron_ingot', 'minecraft:iron_ingot', 0, 300)
+event.campfireCooking('gtceu:charred_mud_ingot', 'gtceu:mud_mixture_dust', 10, 400) //Primera linea entrada, segunda salida
+event.campfireCooking('minecraft:brick', 'gtceu:compressed_clay', 10, 320)
+//event.campfireCooking('gtceu:wrought_iron_ingot', 'minecraft:iron_ingot', 0, 300)
 
 })

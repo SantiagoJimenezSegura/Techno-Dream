@@ -3,9 +3,11 @@
 	default_quest_shape: ""
 	filename: "la_tienda"
 	group: "1B5043855EFD55F5"
+	icon: "gtceu:doge_coin"
 	id: "632C8A3E7BAB1185"
 	order_index: 1
 	quest_links: [ ]
 	quests: [ ]
-	title: "La Tienda"
+	subtitle: ["Go to shoping ;)"]
+	title: "The Shop"
 }

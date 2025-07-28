@@ -1,0 +1,16 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:archaeology/ocean_ruin_cold"
+    }
+  ],
+  "type": "productivelib:ingredient_modifier",
+  "chance": 0.08,
+  "replace": true,
+  "addition": {
+    "type": "forge:nbt",
+    "item": "productivebees:spawn_egg_configurable_bee",
+    "nbt": "{EntityTag:{type:\"productivebees:amber\"}}"
+  }
+}

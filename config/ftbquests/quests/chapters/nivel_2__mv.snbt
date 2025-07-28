@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "nivel_2__mv"
+	group: "3F6FC1AC3A5D652E"
+	icon: "gtceu:mv_machine_hull"
+	id: "2EC173520A9D5576"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	subtitle: ["Voltaje Medio"]
+	title: "Nivel 2 - MV"
+}

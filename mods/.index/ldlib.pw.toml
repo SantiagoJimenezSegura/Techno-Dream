@@ -1,13 +1,13 @@
-filename = 'ldlib-forge-1.20.1-1.0.40.jar'
-name = 'LDLib'
+filename = 'ldlib-forge-1.20.1-1.0.41.b.jar'
+name = 'LowDragLib'
 side = 'both'
 
 [download]
-hash = '029b4f6fc4aa6d5ad4de7e87810cf49827626687'
+hash = 'd2bfe0b98d2aa7f07400981895fdb89e06ff0755'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6671158
+file-id = 6792104
 project-id = 626676

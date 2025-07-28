@@ -1,26 +1,13 @@
-JEIEvents.hideItems(event => {
-  event.hide('forestry:can')
-  event.hide('forestry:capsule')
-  event.hide('gendustry:gene_sample')
-  event.hide('tconstruct:pickaxe')
-  event.hide('tconstruct:pickadze')
-  event.hide('tconstruct:mattock')
-  event.hide('tconstruct:hand_axe')
-  event.hide('tconstruct:kama')
-  event.hide('tconstruct:dagger')
-  event.hide('tconstruct:sword')
-  event.hide('tconstruct:sledge_hammer')
-  event.hide('tconstruct:vein_hammer')
-  event.hide('tconstruct:excavator')
-  event.hide('tconstruct:broad_axe')
-  event.hide('tconstruct:scythe')
-  event.hide('tconstruct:cleaver')
-  event.hide('tconstruct:crossbow')
-  event.hide('tconstruct:longbow')
-  event.hide('tconstruct:melting_pan')
-  event.hide('tconstruct:war_pick')
-  event.hide('tconstruct:battlesign')
-  event.hide('tconstruct:swasher')
-  event.hide('forestry:refractory')
-  event.hide('ae2:facade')
-})
+//REIRuntime.hideItems([tconstruct:swasher, tconstruct:battlesign, tconstruct:war_pick]) Usado para ocultar objetos del REI
+
+//REIRuntime.showItem(item)
+// - Shows the given item in REI
+
+//REIRuntime.showItems([item, item, ...])
+// - Shows the given items in REI
+
+//REIRuntime.hideItem(item)
+// - Hides the given item in REI
+
+//REIRuntime.hideItems([item, item, ...])
+// - Hides the given items in REI

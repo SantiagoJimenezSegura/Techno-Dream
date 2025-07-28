@@ -1,0 +1,36 @@
+{
+  "type": "productivebees:centrifuge",
+  "ingredient": {
+    "type": "forge:nbt",
+    "item": "productivebees:configurable_honeycomb",
+    "nbt": {
+      "EntityTag": {
+        "type": "productivebees:miracle"
+      }
+    }
+  },
+  "outputs": [
+    {
+      "item": {
+        "item": "l2hostility:miracle_ingot"
+      },
+      "chance": 5
+    },
+    {
+      "fluid": {
+        "fluid": "productivebees:honey"
+      },
+      "amount": 25
+    }
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "l2hostility"
+    },
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "productivebees:miracle"
+    }
+  ]
+}

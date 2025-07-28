@@ -3,9 +3,10 @@
 	default_quest_shape: ""
 	filename: "consejos"
 	group: "1B5043855EFD55F5"
+	icon: "minecraft:lectern"
 	id: "7D21240986F3216D"
 	order_index: 2
 	quest_links: [ ]
 	quests: [ ]
-	title: "Consejos"
+	title: "Consejos y trucos"
 }

@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "powah"
+	group: "2B390A58D90D1CCB"
+	icon: "powah:uraninite"
+	id: "1B1AD39013265E17"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+	title: "Powah"
+}

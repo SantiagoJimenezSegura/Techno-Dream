@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:electric_blast_furnace"
 	id: "091B4EA3D885F393"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [ ]
 	title: "Multibloques"

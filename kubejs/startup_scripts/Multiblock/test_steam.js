@@ -2,7 +2,7 @@ const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multibl
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_steam_compressor', 'multiblock')
-        .machine((holder) => new $SteamMulti(holder, 4))
+        .machine((holder) => new $SteamMulti(holder, 2))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('compressor')
         .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)

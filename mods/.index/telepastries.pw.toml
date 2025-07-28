@@ -1,0 +1,13 @@
+filename = 'TelePastries-1.20.1-0.8.4.jar'
+name = 'TelePastries'
+side = 'both'
+
+[download]
+hash = '11b167c70aa94c1937546a2108d96d13ed56118b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5740987
+project-id = 319466

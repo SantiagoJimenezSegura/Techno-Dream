@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "nivel_4__ev"
+	group: "3F6FC1AC3A5D652E"
+	icon: "gtceu:ev_machine_hull"
+	id: "0E3A9195A0BCF28D"
+	order_index: 6
+	quest_links: [ ]
+	quests: [ ]
+	title: "Nivel 4 - EV"
+}
