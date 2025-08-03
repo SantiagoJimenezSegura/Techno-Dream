@@ -9,25 +9,15 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["649A91688CE1ADE7"]
 			id: "503A71179FACC361"
-			rewards: [{
-				count: 16
-				id: "6E8C20FB8153BC9C"
-				item: "gtceu:vacuum_tube"
-				type: "item"
-			}]
-			subtitle: "Entrando al voltaje ultra bajo"
-			tasks: [{
-				consume_items: false
-				id: "674DED0C46C8AF69"
-				item: "gtceu:vacuum_tube"
-				type: "item"
-			}]
-			title: "VOLTAJE ULTRA BAJO - ULV"
+			subtitle: "El Triodo, la revolución del Diodo"
+			title: "Voltaje Ultrabajo 2 - &cULV "
 			x: 0.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["32855D2DBF5CD63F"]
 			id: "69FB7A16ECE148DA"
 			rewards: [{
 				count: 8
@@ -35,19 +25,18 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			subtitle: "Entrando al voltaje bajo"
+			subtitle: "Entrando ha &7LV"
 			tasks: [{
 				consume_items: false
 				id: "7009E978C3898750"
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			title: "VOLTAGE BAJO - LV"
+			title: "Voltaje Bajo - &7LV"
 			x: 0.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["1EBECAA22BF58256"]
 			id: "649A91688CE1ADE7"
 			subtitle: "Upgrades, people, upgrades"
 			tasks: [{
@@ -55,12 +44,11 @@
 				item: "gtceu:solid_machine_casing"
 				type: "item"
 			}]
-			title: "Vapor a alta presión"
+			title: "Máquina a Presión Alta"
 			x: -1.5d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["2F5A4CCBD323975D"]
 			id: "21CF30A10374177E"
 			subtitle: "Cuidado con las manos"
 			tasks: [{
@@ -68,41 +56,26 @@
 				item: "gtceu:steam_machine_casing"
 				type: "item"
 			}]
-			title: "Vapor a presión"
+			title: "Maquinas a Presión"
 			x: -1.5d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
-			id: "1EBECAA22BF58256"
-			title: "CIRCUITO PRIMITIVO AVANZADO"
+			dependencies: ["21CF30A10374177E"]
+			id: "2F5A4CCBD323975D"
+			subtitle: "El Diodo"
+			title: "Voltaje Ultrabajo - &cULV"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
-			id: "2F5A4CCBD323975D"
-			title: "CIRCUITO PRIMITIVO"
-			x: 0.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["503A71179FACC361"]
-			id: "4E81B21E00BA37AD"
-			tasks: [{
-				id: "20C937F260276E0A"
-				item: "gtceu:ulv_machine_hull"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["69FB7A16ECE148DA"]
 			id: "32855D2DBF5CD63F"
 			tasks: [{
 				id: "3BC7AB79F41A540C"
 				item: "gtceu:lv_machine_hull"
 				type: "item"
 			}]
+			title: "Carcasa de Máquina &7LV"
 			x: -1.5d
 			y: 1.5d
 		}
@@ -114,9 +87,17 @@
 				item: { Count: 8, id: "create:andesite_casing" }
 				type: "item"
 			}]
+			title: "Maquinas Rudimentarias"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["36A8E78F65D87DB0"]
+			id: "29D485394586B716"
+			title: "Circuito Rudimentario"
 			x: 0.0d
-			y: -4.5d
+			y: -3.0d
 		}
 	]
-	title: "Progreso"
+	title: "&fProgreso"
 }

@@ -4,11 +4,11 @@
 	// Whether Creative Mode should not be possible to select in the world creation screen.
 	"disableCreativeModeSelection": false,
 	// Priority 1: Sets the difficulty in any world to peaceful when enabled.
-	"forcePeaceful": true,
+	"forcePeaceful": false,
 	// Priority 2: Sets the difficulty in any world to easy when enabled.
 	"forceEasy": false,
 	// Priority 3: Sets the difficulty in any world to normal when enabled.
-	"forceNormal": false,
+	"forceNormal": true,
 	// Priority 4: Sets the difficulty in any world to hard when enabled.
 	"forceHard": false,
 	// Whether the cheats option should be forced to be disabled on the initial world creation screen.

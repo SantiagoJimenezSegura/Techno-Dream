@@ -1,0 +1,13 @@
+filename = 'BotaniaEditor-1.20.1-1.0.9.jar'
+name = 'Botania Editor'
+side = 'both'
+
+[download]
+hash = '1655964298bc4726e86864703ad10632c40a6dd7'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5775841
+project-id = 949058

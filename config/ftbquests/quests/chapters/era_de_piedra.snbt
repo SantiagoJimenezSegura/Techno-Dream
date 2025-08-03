@@ -1,5 +1,7 @@
 {
+	autofocus_id: "53D7A11BE92739D0"
 	default_hide_dependency_lines: false
+	default_min_width: 1
 	default_quest_shape: ""
 	filename: "era_de_piedra"
 	group: "3F6FC1AC3A5D652E"
@@ -17,12 +19,6 @@
 			]
 			id: "4A0C0031720C92A4"
 			rewards: [
-				{
-					count: 8
-					id: "42A1484D94DC6DCF"
-					item: "minecraft:torch"
-					type: "item"
-				}
 				{
 					id: "6C31350990E8A4C9"
 					item: {
@@ -63,10 +59,15 @@
 					}
 					type: "item"
 				}
+				{
+					id: "592EC6612BAC503E"
+					type: "xp"
+					xp: 100
+				}
 			]
 			tasks: [
 				{
-					count: 32L
+					count: 64L
 					id: "6ED17D85DDE4F3DB"
 					item: {
 						Count: 1
@@ -79,34 +80,21 @@
 					type: "item"
 				}
 				{
-					count: 64L
-					id: "2EF283C133D73B89"
-					item: {
-						Count: 64
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:logs"
-						}
-					}
-					title: "Troncos"
-					type: "item"
-				}
-				{
-					count: 64L
+					count: 128L
 					id: "1A1592D2E08A46B0"
-					item: { Count: 64, id: "minecraft:sand" }
+					item: "minecraft:sand"
 					type: "item"
 				}
 				{
-					count: 64L
+					count: 128L
 					id: "336CC2A544AB378E"
-					item: { Count: 64, id: "minecraft:clay_ball" }
+					item: "minecraft:clay_ball"
 					type: "item"
 				}
 				{
-					count: 64L
+					count: 128L
 					id: "06C658451A4EC2AA"
-					item: { Count: 64, id: "minecraft:andesite" }
+					item: "minecraft:andesite"
 					type: "item"
 				}
 			]
@@ -118,6 +106,11 @@
 			dependencies: ["4A0C0031720C92A4"]
 			description: ["Por ahora &6no es relevante&r tener o no este árbol, pero quizás sería &cbuena idea&r empezar a talarlo desde un inicio, guarda la &6resina&r y los troncos, posteriormente sigue &6plantando y talando&r de vez en cuando."]
 			id: "3611D2F70F663EC0"
+			rewards: [{
+				id: "61C4BE51863CF62E"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "hexagon"
 			subtitle: "Caucho de por vida, oh yeah baby"
 			tasks: [{
@@ -202,12 +195,13 @@
 					type: "item"
 				}
 			]
-			title: "Primeras Herramientas"
+			title: "Mejores Herramientas"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			description: ["Tu primera misión es encontrar una manera de &6hacer herramientas&r, quizás esto te ayude."]
+			dependencies: ["7A9BC735747E44C3"]
+			description: ["Tinker´s Construct"]
 			id: "26E90CA7DEA3F8FA"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -237,7 +231,7 @@
 			]
 			title: "Estación y Constructor"
 			x: 0.0d
-			y: -1.6d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -392,11 +386,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["4A0C0031720C92A4"]
+			dependencies: ["747C169A375AAF43"]
 			description: [
-				"Desgraciadamente no puedes usar el horno, debido a esto tendrás que craftear &6una fogata&r para hacer lingotes que te servirán en el &6PCBF&r"
+				"Desgraciadamente no puedes usar el horno, debido a esto tendrás que craftear &6una fogata&r para hacer lingotes que te servirán en el &6AHAP&r"
 				""
-				"Toma esta &6Charred Mud Gear&r para armar el controlador de tu PCBF, ya que aún no puedes hacer lingotes"
+				"Toma esta &6Charred Mud Gear&r para armar el controlador de tu &6AHAP&r, ya que aún no puedes hacer lingotes"
 			]
 			id: "57960D7C89D30B6E"
 			rewards: [
@@ -418,22 +412,14 @@
 				}
 			]
 			subtitle: "No hay hornos :O, por ahora..."
-			tasks: [
-				{
-					count: 2L
-					id: "3B2722A1C4130338"
-					item: "minecraft:campfire"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "4A4A0DCA566C0DA7"
-					item: { Count: 16, id: "gtceu:mud_mixture_dust" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 16L
+				id: "4A4A0DCA566C0DA7"
+				item: { Count: 16, id: "gtceu:mud_mixture_dust" }
+				type: "item"
+			}]
 			title: "Lingotes a la Leña"
-			x: -2.0d
+			x: -3.0d
 			y: 1.5d
 		}
 		{
@@ -464,12 +450,13 @@
 					type: "item"
 				}
 			]
-			title: "Coke Oven"
-			x: -2.0d
+			title: "Horno de Coke"
+			x: -1.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["230F9DE2AE63866C"]
+			description: ["Estos metales son &6esenciales&r para la progresión a partir de este punto, procura mantener una &6cantidad costante y razonable&r."]
 			id: "613F9F3F8EE51E1B"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -530,7 +517,7 @@
 				type: "item"
 			}]
 			title: "Semi-Automatización"
-			x: -2.0d
+			x: -1.5d
 			y: 4.5d
 		}
 		{
@@ -567,7 +554,7 @@
 				type: "item"
 			}]
 			title: "Placas de Hierro"
-			x: -3.5d
+			x: -3.0d
 			y: 3.0d
 		}
 		{
@@ -825,14 +812,17 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["40C31C7D7AABBF69"]
+			dependencies: [
+				"40C31C7D7AABBF69"
+				"3C6275CE16ECEA2E"
+			]
 			id: "5FD35FD46CCC93F0"
+			subtitle: "Información"
 			tasks: [{
-				id: "07B428AC8C0AC2DC"
-				item: "minecraft:birch_planks"
-				type: "item"
+				id: "78E34A66EF714754"
+				type: "checkmark"
 			}]
-			title: "Sobre tus herramientas"
+			title: "Energía Rotacional"
 			x: 5.5d
 			y: 7.0d
 		}
@@ -899,7 +889,7 @@
 			description: [
 				"Aún no pueden hacer mejores herramientas, para ello vas a necesitar de la &6Smeltery&r de &6TCs&r, por ahora ten esta cabeza de hierro para seguir progresando."
 				""
-				"Tambien puedes optar por seguir con tu &6pico de piedra&r."
+				"Tambien puedes optar por seguir con un &6pico de piedra o pedernal&r."
 			]
 			icon: {
 				Count: 1
@@ -1134,6 +1124,437 @@
 			x: 7.0d
 			y: 6.5d
 		}
+		{
+			description: [
+				"¿Qué? Acaso comenzaste &6golpeando un árbol&r y te diste cuenta que era tremendamente irrompible, JAJAJAja."
+				""
+				"Tranquilo, &6no es ningún error&r, acaso crees que eres Superman o por qué crees que podrias obtener madera golpeando un árbol.  &6=>&r"
+				"{@pagebreak}"
+				"Pero bueno, fuera de bromas, no puedes conseguir madera de &6esta manera&r."
+			]
+			icon: "minecraft:oak_sapling"
+			id: "53D7A11BE92739D0"
+			rewards: [
+				{
+					count: 12
+					id: "768B863ED7C853A0"
+					item: "minecraft:baked_potato"
+					type: "item"
+				}
+				{
+					id: "18C0C7E2B6B4312A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.5d
+			subtitle: "Estás loco, te dañaras las manos."
+			tasks: [{
+				id: "39352C96ADAED904"
+				title: "d"
+				type: "checkmark"
+			}]
+			title: "Larga Vida a los Árboles"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["137458294DA9632C"]
+			description: ["Ahora con ayuda de tu &6Hacha de Pedernal&r consigue un poco de madera."]
+			id: "7A9BC735747E44C3"
+			subtitle: "Fácil, ¿Verdad?"
+			tasks: [{
+				count: 32L
+				id: "0A838CBE2DA343F6"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Troncos"
+				type: "item"
+			}]
+			title: "Consigue Madera"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["53D7A11BE92739D0"]
+			description: ["Conseguir palos es aún más sencillo, solo &6rompe&r algunas hojas y éstas tendrán la &nprobabilidad de soltarlos&r."]
+			id: "37A79E9C57DC4892"
+			rewards: [{
+				id: "325AFB16CD096538"
+				type: "xp"
+				xp: 200
+			}]
+			subtitle: "Rompe Hojas"
+			tasks: [{
+				count: 16L
+				id: "4E41CD5172862B05"
+				item: "minecraft:stick"
+				type: "item"
+			}]
+			title: "Palos"
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["53D7A11BE92739D0"]
+			description: [
+				"Busca &8&lgrava&r&r, esta te será útil para conseguir &6pedernal&r y quizás lo necesites más adelante."
+				""
+				"Busca piedra &6expuesta&r o roca y con el pedernal en la mano dale &nclick derecho&r y verás que conseguiras &6trozos de pedernal&r."
+			]
+			id: "6F74483F9DB20434"
+			rewards: [{
+				id: "4B964401AA1B5189"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Busca Grava"
+			tasks: [
+				{
+					count: 12L
+					id: "4AEEF9384B2A040B"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "20C3C76B6C9FE1AC"
+					item: { Count: 6, id: "notreepunching:flint_shard" }
+					type: "item"
+				}
+			]
+			title: "Pedernal"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"37A79E9C57DC4892"
+				"09D98BBBA48C7779"
+			]
+			id: "137458294DA9632C"
+			tasks: [{
+				id: "07A439D26EDA6CA6"
+				item: {
+					Count: 1
+					id: "notreepunching:flint_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Hacha de Pedernal"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6F74483F9DB20434"]
+			id: "0ADF2FA4539CF05B"
+			subtitle: "Filoso y poco durable, pero barato"
+			tasks: [{
+				id: "102D0BC436FBBCB1"
+				item: {
+					Count: 1
+					id: "notreepunching:flint_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Cuchillo de Pedernal"
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0ADF2FA4539CF05B"]
+			id: "09D98BBBA48C7779"
+			subtitle: "Hilo de Planta y Fibra de Planta"
+			tasks: [
+				{
+					id: "1EB48AD920AC6B2C"
+					item: "notreepunching:plant_fiber"
+					type: "item"
+				}
+				{
+					id: "1626855C4E93810A"
+					item: "notreepunching:plant_string"
+					type: "item"
+				}
+			]
+			title: "Fibroso"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7C3F28A5CDE4EB1B"]
+			description: [
+				"Si no eres muy fan de &6TCs&r, puedes obtar por usar las herramientas de GregTech, algunas de ells cuentan con &nhabilidades&r o están &nencantadas&r por defecto al crearlas."
+				""
+				"Las hachas de &cGregTech&r tienen la habilidad de &ntirar abajo árboles completos&r, esto es útil si usas &6árboles grandes&r."
+			]
+			id: "6E87CD8030909224"
+			rewards: [
+				{
+					id: "6025FACA7EB966A5"
+					item: {
+						Count: 1
+						id: "gtceu:damascus_steel_axe"
+						tag: {
+							DisallowContainerItem: 0b
+							Enchantments: [{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}]
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 1023
+								ToolSpeed: 8.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "602B23663A1D3A56"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "El paquete completo"
+			tasks: [
+				{
+					id: "3BF5A1320CBE3234"
+					item: {
+						Count: 1
+						id: "gtceu:flint_pickaxe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								TorchPlacing: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 5.5f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "054E9A0A50585F1B"
+					item: {
+						Count: 1
+						id: "gtceu:flint_shovel"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 5.5f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46D83BFEB41A5788"
+					item: {
+						Count: 1
+						id: "gtceu:flint_axe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 3.5f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03D04E4DC3416F6C"
+					item: {
+						Count: 1
+						id: "gtceu:flint_sword"
+						tag: {
+							DisallowContainerItem: 0b
+							Enchantments: [{
+								id: "minecraft:fire_aspect"
+								lvl: 2s
+							}]
+							GT.Behaviours: { }
+							GT.Tool: {
+								AttackDamage: 4.0f
+								AttackSpeed: -2.4f
+								Damage: 0
+								MaxDamage: 63
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "004785C84E76E3EC"
+					item: {
+						Count: 1
+						id: "gtceu:flint_hoe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 63
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2DDC45124D92F36E"
+					item: {
+						Count: 1
+						id: "gtceu:flint_knife"
+						tag: {
+							DisallowContainerItem: 0b
+							Enchantments: [{
+								id: "minecraft:fire_aspect"
+								lvl: 2s
+							}]
+							GT.Behaviours: { }
+							GT.Tool: {
+								AttackDamage: 1.0f
+								AttackSpeed: 3.0f
+								Damage: 0
+								MaxDamage: 63
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3F027BCA5FD210B2"
+					item: {
+						Count: 1
+						id: "gtceu:flint_mortar"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 63
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Armamento de Pedernal"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["137458294DA9632C"]
+			id: "45AF9AA094C92525"
+			subtitle: "El set restante de pedernal"
+			tasks: [
+				{
+					id: "1E1255AFA07E8C15"
+					item: {
+						Count: 1
+						id: "notreepunching:flint_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "75EC1496894A9566"
+					item: {
+						Count: 1
+						id: "notreepunching:flint_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4789238923BC8AB3"
+					item: {
+						Count: 1
+						id: "notreepunching:flint_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Herramientas de Pedernal"
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4A0C0031720C92A4"]
+			description: [
+				"Para continuar la progresión vas a necesitar &6Hogueras&r."
+				""
+				"Crea un &6Fire Starter&r, posteriormente tira al suelo &c1 tronco y 3 palos&r y con el fire starter &6mantén el click derecho en el bloque donde los tiraste&r, y de esta manera tendrás una linda y acogedora hoguera."
+			]
+			id: "747C169A375AAF43"
+			rewards: [{
+				id: "3C7A2BD0BB188A3E"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Hogera IRL"
+			tasks: [{
+				id: "1F2C35CDEE7820A1"
+				item: {
+					Count: 1
+					id: "notreepunching:fire_starter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Un Poco de Calor"
+			x: -1.5d
+			y: 1.5d
+		}
 	]
-	title: "Nivel 0 - Era de Priedra"
+	subtitle: ["El INICIO 0.5"]
+	title: "&6Nivel 0 - Era de Priedra"
 }
