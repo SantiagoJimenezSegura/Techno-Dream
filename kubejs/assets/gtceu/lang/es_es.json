@@ -1,15 +1,33 @@
 {
-	"material.gtceu.redstone_alloy": "Aleación de Redstone",
-	"block.gtceu.primitive_clay_blast_furnace": "§6Alto Horno De Arcilla Primitivo",
-    "gtceu.primitive_clay_blast_furnace": "§6Alto Horno De Arcilla Primitivo",
+	
+	"__ITEMS_____TOP": "___ITEMS___",
+	"__ITEMS__MIDDLE": "___ITEMS___",
+	"__ITEMS__BOTTOM": "___ITEMS___",
 	"material.gtceu.mud_mixture": "Mud Mixture",
 	"material.gtceu.charred_mud": "Charred Mud",
+	"material.gtceu.redstone_alloy": "Redstone Alloy",
+	"material.gtceu.unprocessed_crude_ore": "Unprocessed Crude Ore",
+
+
+	"__MULTIBLOCK_____TOP": "___MULTIBLOCK___",
+	"__MULTIBLOCK__MIDDLE": "___MULTIBLOCK___",
+	"__MULTIBLOCK__BOTTOM": "___MULTIBLOCK___",
+	"block.gtceu.primitive_clay_blast_furnace": "§6Alto Horno de Arcilla Primitivo",
+    "gtceu.primitive_clay_blast_furnace": "§6Alto Horno de Arcilla Primitivo",
+
 	"block.gtceu.high_pressure_atom_splitter": "Divisor de Átomos de Alta Presión",
 	"block.gtceu.high_pressure_atom_splitter.desc": "Máquina que separa convenientemente los átomos para liberar su energía en forma de combustible y residuos atómicos.",
     "block.gtceu.high_pressure_atom_splitter.desc2": "Overclock Perfecto",
     "block.gtceu.high_pressure_atom_splitter.desc3": "§5Tipo de Receta:§r Separador de Átomos",
-	"__ITEMS_____TOP": "",
-	"__ITEMS__MIDDLE": "",
-	"__ITEMS__BOTTOM": ""
+
+	"block.gtceu.primitive_ore_miner": "§6Minero de Minerales Primitivo",
+	"gtceu.primitive_ore_miner": "§6Minero de Minerales Primitivo",
+	"block.gtceu.primitive_ore_miner.desc": "§5Fuente de Energía:§r Aparato Deconocido",
+	"block.gtceu.primitive_ore_miner.desc1": "Estructura que absorbe la energía contenida en el §6Aparato Desconocido",
+
+	"block.gtceu.primitive_raw_material_processor": "§6Procesador Primitivo de Material Crudo",
+	"gtceu.primitive_raw_material_processor": "§6Procesador Primitivo de Material Crudo",
+	"block.gtceu.primitive_raw_material_processor.desc": "§5Fuente de Energía:§r Aparato Deconocido",
+	"block.gtceu.primitive_raw_material_processor.desc1": "Estructura que absorbe la energía contenida en el §6Aparato Desconocido"
 
 }

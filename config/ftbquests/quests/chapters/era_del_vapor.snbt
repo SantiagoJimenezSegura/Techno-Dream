@@ -7,7 +7,15 @@
 	id: "3EE909732D80C98E"
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "553584EF54DACFB1"
+		tasks: [{
+			id: "711A880497AD3EA2"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 	subtitle: ["Voltaje Bajo"]
-	title: "Nivel 1 - LV"
+	title: "&6Nivel 1 - LV"
 }

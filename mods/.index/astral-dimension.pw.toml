@@ -1,0 +1,13 @@
+filename = 'Astral_1.9_1.20.1.jar'
+name = 'Astral Dimension'
+side = 'both'
+
+[download]
+hash = 'ef7810729a59ff3d579bf6497b9a03ef1369e198'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6735707
+project-id = 645743

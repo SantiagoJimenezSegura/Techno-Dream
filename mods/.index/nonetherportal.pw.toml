@@ -1,0 +1,13 @@
+filename = 'nonetherportal-1.20.1-1.0.jar'
+name = 'No Nether Portal'
+side = 'both'
+
+[download]
+hash = '772155ead7f8aab06a3404c31377f26e3867f1f3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4654671
+project-id = 628663

@@ -7,6 +7,14 @@
 	id: "76B75D4E2D2D9C77"
 	order_index: 5
 	quest_links: [ ]
-	quests: [ ]
-	title: "Almacenamiento Digital"
+	quests: [{
+		id: "58581D1C9120DE74"
+		tasks: [{
+			id: "20F2E0035DC47CE0"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&fAlmacenamiento Digital"
 }
