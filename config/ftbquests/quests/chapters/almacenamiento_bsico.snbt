@@ -7,14 +7,6 @@
 	id: "7498E3D939D557F6"
 	order_index: 4
 	quest_links: [ ]
-	quests: [{
-		id: "0C4EC14E7BD52FFE"
-		tasks: [{
-			id: "08814C92C7D4AF99"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
-	title: "&fAlmacenamiento Básico"
+	quests: [ ]
+	title: "Almacenamiento Básico"
 }

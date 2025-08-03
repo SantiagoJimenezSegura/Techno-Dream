@@ -7,15 +7,6 @@
 	id: "021E4A0A899A91AF"
 	order_index: 5
 	quest_links: [ ]
-	quests: [{
-		id: "73AC8B5804F081CC"
-		tasks: [{
-			id: "0D1C603D62D7139D"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
-	subtitle: ["Voltaje Alto"]
-	title: "&6Nivel 3 - HV"
+	quests: [ ]
+	title: "Nivel 3 - HV"
 }

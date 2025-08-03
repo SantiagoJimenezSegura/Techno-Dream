@@ -7,42 +7,29 @@
 	id: "0F94C8439FC04820"
 	order_index: 2
 	quest_links: [ ]
-	quests: [
-		{
-			id: "7D119044E99A325B"
-			subtitle: "¿Nuevos metas en la generación?"
-			tasks: [{
-				id: "0F3C27529EF63F47"
-				type: "checkmark"
-			}]
-			title: "Generación de Energía"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7D119044E99A325B"]
-			id: "3C6275CE16ECEA2E"
-			subtitle: "Unidades de Estrés (SU)"
-			tasks: [{
-				id: "1C3E881AB9AE6FB1"
-				type: "checkmark"
-			}]
-			title: "Era de Piedra"
-			x: 4.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3C6275CE16ECEA2E"]
-			id: "288AA93EDD39FE28"
-			subtitle: "Vapor, ¿Qúe esperabas?"
-			tasks: [{
-				id: "75B9E44D45F0680F"
-				type: "checkmark"
-			}]
-			title: "Era del Vapor"
-			x: 7.0d
-			y: 0.0d
-		}
-	]
-	title: "&fGeneración de Energía"
+	quests: [{
+		id: "0D89C37B98E0B2D3"
+		rewards: [
+			{
+				id: "7B2BEA662C07A956"
+				item: "create:large_water_wheel"
+				type: "item"
+			}
+			{
+				exclude_from_claim_all: true
+				id: "718596A44798DD6D"
+				table_id: 4843678763669674976L
+				type: "random"
+			}
+		]
+		tasks: [{
+			count: 4L
+			id: "3240DC592E3232CD"
+			item: { Count: 4, id: "create:water_wheel" }
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Generación de Energía"
 }

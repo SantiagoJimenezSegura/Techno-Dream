@@ -131,10 +131,61 @@
 					type: "item"
 				}
 				{
-					count: 32
+					count: 16
+					id: "4405ED3DB00CB2CE"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					count: 8
 					id: "4B56A53460D5E20F"
 					item: "minecraft:golden_carrot"
 					title: "SATURACIÓN AL MÁXIMO"
+					type: "item"
+				}
+				{
+					id: "6EF94CFDCBB10B8A"
+					item: {
+						Count: 1
+						id: "tconstruct:sword"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:steel"
+								"tconstruct:steel"
+								"tconstruct:steel"
+							]
+							tic_modifiers: [
+								{
+									level: 3
+									name: "tconstruct:ductile"
+								}
+								{
+									level: 1
+									name: "tconstruct:silky_shears"
+								}
+							]
+							tic_multipliers: {
+								"tconstruct:durability": 1.1f
+								"tconstruct:mining_speed": 0.5f
+							}
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:armor_toughness": 3.0f
+								"tconstruct:attack_damage": 7.13f
+								"tconstruct:attack_speed": 1.68f
+								"tconstruct:durability": 1163.6624f
+								"tconstruct:harvest_tier": "minecraft:diamond"
+								"tconstruct:mining_speed": 3.1499999f
+								"tconstruct:projectile_damage": 2.3f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
 					type: "item"
 				}
 			]
@@ -176,9 +227,9 @@
 				}
 				{
 					consume_items: true
-					count: 1024L
+					count: 512L
 					id: "465C6CA13ED6C2F2"
-					item: "minecraft:stone"
+					item: { Count: 512, id: "minecraft:stone" }
 					type: "item"
 				}
 			]
@@ -316,6 +367,5 @@
 			y: 1.5d
 		}
 	]
-	subtitle: ["INICIO"]
-	title: "&6La creación"
+	title: "La creación"
 }

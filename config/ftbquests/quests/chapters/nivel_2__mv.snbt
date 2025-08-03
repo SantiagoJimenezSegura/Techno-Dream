@@ -7,15 +7,7 @@
 	id: "2EC173520A9D5576"
 	order_index: 4
 	quest_links: [ ]
-	quests: [{
-		id: "63A492E84FEB8538"
-		tasks: [{
-			id: "1DA87D2FA90D9318"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [ ]
 	subtitle: ["Voltaje Medio"]
-	title: "&6Nivel 2 - MV"
+	title: "Nivel 2 - MV"
 }

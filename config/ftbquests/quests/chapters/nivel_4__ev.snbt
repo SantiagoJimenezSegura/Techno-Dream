@@ -7,14 +7,6 @@
 	id: "0E3A9195A0BCF28D"
 	order_index: 6
 	quest_links: [ ]
-	quests: [{
-		id: "3C654B49A88EF403"
-		tasks: [{
-			id: "20E6CF3C01DDA245"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
-	title: "&6Nivel 4 - EV"
+	quests: [ ]
+	title: "Nivel 4 - EV"
 }

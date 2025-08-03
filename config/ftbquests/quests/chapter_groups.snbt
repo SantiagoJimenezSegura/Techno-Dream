@@ -1,7 +1,7 @@
 {
 	chapter_groups: [
-		{ id: "3F6FC1AC3A5D652E", title: "&fNiveles y Eras" }
-		{ id: "2B390A58D90D1CCB", title: "&fEntrelazamiento" }
-		{ id: "1B5043855EFD55F5", title: "&fConsejos y Utilidades" }
+		{ id: "3F6FC1AC3A5D652E", title: "Niveles y Eras" }
+		{ id: "2B390A58D90D1CCB", title: "Entrelazamiento" }
+		{ id: "1B5043855EFD55F5", title: "Consejos y Utilidades" }
 	]
 }

@@ -7,14 +7,6 @@
 	id: "245E490582268901"
 	order_index: 3
 	quest_links: [ ]
-	quests: [{
-		id: "02134979734B29FA"
-		tasks: [{
-			id: "1176E61A12E1DBDE"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
-	title: "&fGeneración de Recursos"
+	quests: [ ]
+	title: "Generación de Recursos"
 }
