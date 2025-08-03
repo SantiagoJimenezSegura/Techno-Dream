@@ -70,6 +70,22 @@ ServerEvents.recipes(event => {
     }
   ).replaceIngredient('minecraft:water_bucket', Item.of('minecraft:bucket')); // Regresa vacio
 
+    event.shaped(
+    'gtceu:pyrolyse_oven',
+    [
+      'PCW',
+      'CHC',
+      'PpW'
+    ],
+    {
+      P: 'gtceu:lv_electric_piston',
+      p: 'gtceu:lv_electric_pump',
+      C: '#gtceu:circuits/lv',
+      H: 'gtceu:lv_machine_hull',
+      W: 'gtceu:tin_quadruple_wire'
+    }
+  )
+
   // Receta custom del packed mud
   event.shaped(
     'minecraft:packed_mud',
