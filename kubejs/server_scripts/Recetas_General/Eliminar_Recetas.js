@@ -28,6 +28,8 @@ event.remove({ id: 'gtceu:shaped/processing_array' })
 event.remove({ id: 'create:crafting/materials/andesite_alloy_from_zinc' })
 event.remove({ id: 'create:crafting/materials/andesite_alloy' })
 event.remove({ id: 'gtceu:shaped/pyrolyse_oven' })
+event.remove({ id: 'gtceu:shaped/electronic_circuit_lv' })
+
 
 //SALIDA
 event.remove({ output: 'create:encased_fan' })

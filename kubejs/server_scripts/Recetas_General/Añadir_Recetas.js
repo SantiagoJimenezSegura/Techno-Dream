@@ -53,6 +53,21 @@ ServerEvents.recipes(event => {
     'gtceu:nickel_dust'            
   ]
 )
+  event.shapeless(
+  Item.of('gtceu:andesite_alloy_dust', 1), 
+  [
+    'gtceu:tiny_iron_dust',
+    '2x gtceu:small_andesite_dust'            
+  ]
+)
+  event.shapeless(
+  Item.of('gtceu:small_andesite_dust', 1), 
+  [
+    'minecraft:andesite',
+    '#forge:tools/mortars'            
+  ]
+)
+
   
 
 /// RECETAS CON FORMA///
@@ -70,7 +85,7 @@ ServerEvents.recipes(event => {
     }
   ).replaceIngredient('minecraft:water_bucket', Item.of('minecraft:bucket')); // Regresa vacio
 
-    event.shaped(
+  event.shaped(
     'gtceu:pyrolyse_oven',
     [
       'PCW',
@@ -85,8 +100,34 @@ ServerEvents.recipes(event => {
       W: 'gtceu:tin_quadruple_wire'
     }
   )
+  
+  event.shaped(
+    'kubejs:rotacional_circuit',
+    [
+      'HCP',
+      'CWC',
+      'PCH'
+    ],
+    {
+      P: 'kubejs:leather_belt',
+      C: 'gtceu:small_iron_gear',
+      H: 'gtceu:charred_mud_gear',
+      W: '#minecraft:wooden_slabs'
+    }
+  )
+  event.shaped(
+    Item.of('kubejs:leather_belt', 2),
+    [
+      ' L ',
+      'LNL',
+      ' L '
+    ],
+    {
+      L: 'minecraft:leather',
+      N: '#forge:tools/knives'
+    }
+  )
 
-  // Receta custom del packed mud
   event.shaped(
     'minecraft:packed_mud',
     [
@@ -166,10 +207,12 @@ ServerEvents.recipes(event => {
     //event.recipes.create.item_application('minecraft:diamond', ['minecraft:coal_block', 'minecraft:sand'])
 //})
 
-// RECETAS FOGATA
+// RECETAS FOGATA //
+
 ServerEvents.recipes(event => {
-event.campfireCooking('gtceu:charred_mud_ingot', 'gtceu:mud_mixture_dust', 10, 400) //Primera linea entrada, segunda salida
-event.campfireCooking('minecraft:brick', 'gtceu:compressed_clay', 10, 320)
-//event.campfireCooking('gtceu:wrought_iron_ingot', 'minecraft:iron_ingot', 0, 300)
+event.campfireCooking('gtceu:charred_mud_ingot', 'gtceu:mud_mixture_dust', 0, 400) //Primera linea salida, segunda entrada
+event.campfireCooking('minecraft:brick', 'gtceu:compressed_clay', 0, 320)
+event.campfireCooking('gtceu:andesite_alloy_ingot', 'gtceu:andesite_alloy_dust', 0, 400)
+event.campfireCooking('minecraft:leather', 'kubejs:compressed_raw_leather', 0, 220)
 
 })

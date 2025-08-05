@@ -81,5 +81,6 @@ ServerEvents.recipes(event => {
   }
 
   pcbf_potting_boosted('2x minecraft:iron_ingot', '#forge:ores/iron', 100)
+
   
 })

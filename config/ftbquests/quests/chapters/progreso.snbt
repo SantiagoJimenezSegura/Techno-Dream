@@ -12,6 +12,11 @@
 			dependencies: ["649A91688CE1ADE7"]
 			id: "503A71179FACC361"
 			subtitle: "El Triodo, la revolución del Diodo"
+			tasks: [{
+				id: "29100338A25956BC"
+				item: "kubejs:triode"
+				type: "item"
+			}]
 			title: "Voltaje Ultrabajo 2 - &cULV "
 			x: 0.0d
 			y: 0.0d
@@ -63,7 +68,12 @@
 		{
 			dependencies: ["21CF30A10374177E"]
 			id: "2F5A4CCBD323975D"
-			subtitle: "El Diodo"
+			subtitle: "El Diodo y el Circuito Base"
+			tasks: [{
+				id: "3198D38A0F3BCD6E"
+				item: "kubejs:raw_primitive_circuit"
+				type: "item"
+			}]
 			title: "Voltaje Ultrabajo - &cULV"
 			x: 0.0d
 			y: -1.5d
@@ -94,7 +104,12 @@
 		{
 			dependencies: ["36A8E78F65D87DB0"]
 			id: "29D485394586B716"
-			title: "Circuito Rudimentario"
+			tasks: [{
+				id: "14A328A92F6F30B3"
+				item: "kubejs:rotacional_circuit"
+				type: "item"
+			}]
+			title: "Circuito Rotacional"
 			x: 0.0d
 			y: -3.0d
 		}

@@ -16,6 +16,6 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	subtitle: ["Voltaje Bajo"]
-	title: "&6Nivel 1 - LV"
+	subtitle: ["&fVoltaje&r Bajo"]
+	title: "&6Nivel 1 - &8LV"
 }

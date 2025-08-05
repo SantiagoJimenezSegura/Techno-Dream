@@ -6,4 +6,5 @@ ServerEvents.recipes(event => {
         .circuit(3)
         .duration(100)
         .EUt(128)
+
 })

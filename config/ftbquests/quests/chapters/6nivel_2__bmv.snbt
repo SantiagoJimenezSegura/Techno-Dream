@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6nivel_2__bmv"
+	group: "3F6FC1AC3A5D652E"
+	icon: "gtceu:iv_machine_hull"
+	id: "1AFEFD5711D96CB8"
+	order_index: 7
+	quest_links: [ ]
+	quests: [{
+		id: "764FCCE58E0DD539"
+		tasks: [{
+			id: "0E3FE9717F134A00"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	subtitle: ["&fVoltaje &9Insano"]
+	title: "&6Nivel 5 - &9IV"
+}

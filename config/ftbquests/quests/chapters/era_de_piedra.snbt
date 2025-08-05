@@ -352,7 +352,7 @@
 					type: "item"
 				}
 			]
-			title: "Alto Horno de Arcilla Primitivo"
+			title: "&6Alto Horno de Arcilla Primitivo"
 			x: 0.0d
 			y: 3.0d
 		}
@@ -455,7 +455,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["230F9DE2AE63866C"]
+			dependencies: ["615F19D37819538B"]
 			description: ["Estos metales son &6esenciales&r para la progresión a partir de este punto, procura mantener una &6cantidad costante y razonable&r."]
 			id: "613F9F3F8EE51E1B"
 			rewards: [{
@@ -584,6 +584,7 @@
 							value: "forge:tools/saws"
 						}
 					}
+					title: "Cualquiera Sierra"
 					type: "item"
 				}
 				{
@@ -595,6 +596,7 @@
 							value: "forge:tools/wire_cutters"
 						}
 					}
+					title: "Cualquier Cortador de Cable"
 					type: "item"
 				}
 				{
@@ -606,6 +608,7 @@
 							value: "forge:tools/hammers"
 						}
 					}
+					title: "Cualquier Martillo"
 					type: "item"
 				}
 				{
@@ -617,6 +620,7 @@
 							value: "forge:tools/mortars"
 						}
 					}
+					title: "Cualquier Mortero"
 					type: "item"
 				}
 				{
@@ -628,6 +632,7 @@
 							value: "forge:tools/files"
 						}
 					}
+					title: "Caulquier Lima"
 					type: "item"
 				}
 				{
@@ -639,6 +644,7 @@
 							value: "forge:tools/screwdrivers"
 						}
 					}
+					title: "Cualquier Destornillador"
 					type: "item"
 				}
 			]
@@ -823,8 +829,8 @@
 				type: "checkmark"
 			}]
 			title: "Energía Rotacional"
-			x: 5.5d
-			y: 7.0d
+			x: 7.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -849,7 +855,7 @@
 			]
 			title: "Aleación de Andesita"
 			x: 0.0d
-			y: 8.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["1B5E63411548CADC"]
@@ -882,7 +888,7 @@
 			}]
 			title: "¿¡Create IN GT MODPACK!?"
 			x: -1.5d
-			y: 7.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["1B5E63411548CADC"]
@@ -916,7 +922,7 @@
 			}]
 			title: "Mejora 2.0"
 			x: -1.5d
-			y: 8.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -955,25 +961,36 @@
 			}]
 			title: "Mejora 1.0"
 			x: 1.5d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
-			dependencies: [
-				"1B5E63411548CADC"
-				"40C31C7D7AABBF69"
-			]
+			dependencies: ["640D2FD18446EA7F"]
 			description: ["Las &6carcadas de andesita&r te ayudarán a realizar tus primeras máquinas en la edad de piedra."]
 			id: "08B12CF4B6ED79A0"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "Machine Hulls Primitivos"
-			tasks: [{
-				count: 16L
-				id: "443FEB94E9552E3D"
-				item: { Count: 16, id: "create:andesite_casing" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 8.0d
+			tasks: [
+				{
+					count: 16L
+					id: "443FEB94E9552E3D"
+					item: { Count: 16, id: "create:andesite_casing" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "5F1C5A388D6846DF"
+					item: { Count: 16, id: "gtceu:andesite_alloy_ingot" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4480C6ADFD75CFEC"
+					item: { Count: 16, id: "create:shaft" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -988,8 +1005,8 @@
 				type: "item"
 			}]
 			title: "Prensa Mécanica"
-			x: 7.0d
-			y: 8.0d
+			x: 8.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -1020,7 +1037,7 @@
 				}
 			]
 			title: "Placas, placas, placas"
-			x: 7.0d
+			x: 8.0d
 			y: 3.0d
 		}
 		{
@@ -1040,19 +1057,21 @@
 				}
 			]
 			title: "Pepitas de Hierro Forjado"
-			x: 8.0d
-			y: 6.5d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2C8FC6EC4298F008"]
+			description: ["Ahora que haz creado algunos &3circuitos rotacionales&r y haz hecho tu primer máquina rotacional, la prensa mecánica, te habrás dado cuenta que vas a ocupar buenas cantidades de &6cuero&r y para solucionar eso te recomiendo comprimir la carne de los mobs hasta obtener &6cuero crudo comprimido&r y entonces dejarlo secar en un hoguera para así obtener cuero, fácil."]
 			id: "340E0D7FF0B58CD1"
 			tasks: [{
+				count: 16L
 				id: "7602BC32FD1ECB1C"
 				item: "minecraft:leather"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 9.5d
+			x: 8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -1066,7 +1085,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 9.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -1098,8 +1117,8 @@
 				}
 			]
 			title: "Forjando Hierro"
-			x: 9.0d
-			y: 6.5d
+			x: 10.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1121,8 +1140,8 @@
 				type: "item"
 			}]
 			title: "Suministro de Lava"
-			x: 7.0d
-			y: 6.5d
+			x: 8.0d
+			y: 6.0d
 		}
 		{
 			description: [
@@ -1151,7 +1170,6 @@
 			subtitle: "Estás loco, te dañaras las manos."
 			tasks: [{
 				id: "39352C96ADAED904"
-				title: "d"
 				type: "checkmark"
 			}]
 			title: "Larga Vida a los Árboles"
@@ -1554,7 +1572,99 @@
 			x: -1.5d
 			y: 1.5d
 		}
+		{
+			dependencies: ["230F9DE2AE63866C"]
+			description: [
+				"Ya que no puedes usar un &lhorno común&r, tienes que utilizar el &6AHAP&r y por eso mismo aqui te dijo una lista de los materiales que puedes procesar y/o conseguir con el."
+				""
+				"&6Checa la siguiente página&r =>"
+				"{@pagebreak}"
+				"&5Lingotes y aleaciones&r:"
+				"- Hierro"
+				"- Cobre"
+				"- Estaño (Tin)"
+				"- Bronze"
+				"- Andesite Alloy"
+				""
+				"Podrás realizar recetas simples o obtar por usar lava y &lmejorar la salida&r de estos mismos, luego desbloquearás el &6Steam Oven&r para cocinar tus lingotes con vapor."
+			]
+			id: "615F19D37819538B"
+			subtitle: "Información"
+			tasks: [{
+				id: "704CB016F91B8BE9"
+				type: "checkmark"
+			}]
+			title: "&6AHAP"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["62D9EE15F7E4D736"]
+			icon: "kubejs:rotacional_circuit"
+			id: "640D2FD18446EA7F"
+			size: 1.5d
+			subtitle: "Podrás mover los engranajes"
+			tasks: [
+				{
+					count: 8L
+					id: "3DEAF2D643AEA8D5"
+					item: "kubejs:rotacional_circuit"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "440CAD12789F0B1A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:wooden_slabs"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "7D8231F42FE440DB"
+					item: { Count: 32, id: "gtceu:small_iron_gear" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6E2FBCB10A8E6FCA"
+					item: { Count: 16, id: "kubejs:leather_belt" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "3A93F0429FE97F7A"
+					item: { Count: 16, id: "gtceu:charred_mud_gear" }
+					type: "item"
+				}
+			]
+			title: "&6Circuitos Rotacionales"
+			x: 4.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1B5E63411548CADC"]
+			description: [
+				"De acuerdo, ahora que has hecho un poco de &6Andesite Alloy&r, es hora de empezar con las máquinas, o quizás aún no."
+				""
+				"Al parecer la maquinaria rotacional siempre ha sido dificil de elaborar, ahora te das cuenta de esto."
+				""
+				"Necesitarás realizar &3circuitos rotacionales&r para poder realizar las maquinaria rotacional, no es tan difícil, ¿Cierto?"
+			]
+			id: "62D9EE15F7E4D736"
+			tasks: [{
+				id: "15D6956B667112C8"
+				type: "checkmark"
+			}]
+			title: "&3Movimiento Rotacional"
+			x: 2.0d
+			y: 8.5d
+		}
 	]
-	subtitle: ["El INICIO 0.5"]
-	title: "&6Nivel 0 - Era de Priedra"
+	subtitle: ["&fEl INICIO 0.5"]
+	title: "&6Nivel 0 - &fEra de Priedra"
 }

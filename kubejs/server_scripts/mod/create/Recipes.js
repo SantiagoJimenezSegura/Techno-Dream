@@ -77,4 +77,36 @@ ServerEvents.recipes(event => {
     event.recipes.createPressing('gtceu:resin_printed_circuit_board', 'gtceu:resin_printed_circuit_board')
   ]).transitionalItem('gtceu:resin_printed_circuit_board').loops(3)
 
+  event.recipes.create.sequenced_assembly([
+    Item.of('kubejs:compressed_raw_leather')
+  ], 'minecraft:beef', [
+    event.recipes.createPressing('minecraft:beef', 'minecraft:beef'),
+    event.recipes.createPressing('minecraft:beef', 'minecraft:beef'),
+    event.recipes.createPressing('minecraft:beef', 'minecraft:beef')
+  ]).transitionalItem('minecraft:beef').loops(2)
+
+  event.recipes.create.sequenced_assembly([
+    Item.of('kubejs:compressed_raw_leather')
+  ], 'minecraft:mutton', [
+    event.recipes.createPressing('minecraft:mutton', 'minecraft:mutton'),
+    event.recipes.createPressing('minecraft:mutton', 'minecraft:mutton'),
+    event.recipes.createPressing('minecraft:mutton', 'minecraft:mutton')
+  ]).transitionalItem('minecraft:mutton').loops(2)
+  
+  event.recipes.create.sequenced_assembly([
+    Item.of('kubejs:compressed_raw_leather')
+  ], 'minecraft:rotten_flesh', [
+    event.recipes.createPressing('minecraft:rotten_flesh', 'minecraft:rotten_flesh'),
+    event.recipes.createPressing('minecraft:rotten_flesh', 'minecraft:rotten_flesh'),
+    event.recipes.createPressing('minecraft:rotten_flesh', 'minecraft:rotten_flesh')
+  ]).transitionalItem('minecraft:rotten_flesh').loops(2)
+
+  event.recipes.create.sequenced_assembly([
+    Item.of('kubejs:compressed_raw_leather')
+  ], 'minecraft:chicken', [
+    event.recipes.createPressing('minecraft:chicken', 'minecraft:chicken'),
+    event.recipes.createPressing('minecraft:chicken', 'minecraft:chicken'),
+    event.recipes.createPressing('minecraft:chicken', 'minecraft:chicken')
+  ]).transitionalItem('minecraft:chicken').loops(2)
+
 })

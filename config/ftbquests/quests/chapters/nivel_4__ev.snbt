@@ -16,5 +16,6 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	title: "&6Nivel 4 - EV"
+	subtitle: ["Voltaje Extremo"]
+	title: "&6Nivel 4 - &dEV"
 }
