@@ -2,11 +2,12 @@ ServerEvents.recipes(event => {
   
   // COMPACTING // Syntax: compacting(output[], input[])
   // Compacting uses the Mechanical Press, Basin and optionally a Blaze Burner.
-  event.recipes.create.compacting(Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}'), [Fluid.water(1000), 'gtceu:fluid_cell']) // 1. Resultado, 2. Entrada/s
   //event.recipes.create.compacting('minecraft:diamond', 'minecraft:coal_block').heated() Ejemplos, checar kubejs wiki => addons Create
   //event.recipes.create.compacting('minecraft:diamond', 'minecraft:coal_block').superheated() Ejemplos
   //event.recipes.create.compacting([Fluid.water(10), 'minecraft:dead_bush'], ['#minecraft:saplings', '#minecraft:saplings']) Ejemplos
   //event.recipes.create.compacting(['minecraft:diamond', Item.of('minecraft:diamond').withChance(0.3)], 'minecraft:coal_block') Ejemplos
+  event.recipes.create.compacting(Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}'), [Fluid.water(1000), 'gtceu:fluid_cell']) // 1. Resultado, 2. Entrada/s
+  event.recipes.create.compacting('gtceu:wrought_iron_ingot', [Fluid.lava(80), '10x gtceu:wrought_iron_nugget'])
 
   // FILLING // Syntax: filling(output, input[])
   // Filling use the spout
@@ -19,6 +20,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(['gtceu:andesite_alloy_dust', Item.of('gtceu:andesite_alloy_dust').withChance(0.1)], ['3x minecraft:iron_nugget', '3x minecraft:andesite'])
   event.recipes.create.mixing([Fluid.of('gtceu:drilling_fluid', 320)], ['2x gtceu:stone_dust', Fluid.of('minecraft:water', 1000), '2x minecraft:redstone'])
   event.recipes.create.mixing([Fluid.of('gtceu:glue', 80)], '2x gtceu:sticky_resin').heated()
+  event.recipes.create.mixing('3x gtceu:bronze_dust', ['gtceu:tin_dust', '3x gtceu:copper_dust'])
    
 
   // MILLING // Syntax: milling(output[], input)
@@ -109,4 +111,11 @@ ServerEvents.recipes(event => {
     event.recipes.createPressing('minecraft:chicken', 'minecraft:chicken')
   ]).transitionalItem('minecraft:chicken').loops(2)
 
+  event.recipes.create.sequenced_assembly([
+    Item.of('gtceu:treated_wood_planks')
+  ], '#minecraft:planks', [
+    event.recipes.createFilling('kubejs:unprocessed_treated_plank', ['kubejs:unprocessed_treated_plank', Fluid.of('gtceu:creosote', 200)]),
+    event.recipes.createPressing('kubejs:unprocessed_treated_plank', 'kubejs:unprocessed_treated_plank'),
+    event.recipes.createPressing('kubejs:unprocessed_treated_plank', 'kubejs:unprocessed_treated_plank')
+  ]).transitionalItem('kubejs:unprocessed_treated_plank').loops(1)
 })

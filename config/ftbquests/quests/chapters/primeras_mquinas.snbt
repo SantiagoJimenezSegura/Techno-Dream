@@ -1,4 +1,5 @@
 {
+	autofocus_id: "20E7AFFE4C4D472C"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "primeras_mquinas"
@@ -8,12 +9,47 @@
 	order_index: 2
 	quest_links: [ ]
 	quests: [{
+		dependencies: ["467CF5C2FF470980"]
+		description: [
+			"&7&oFelicidades, te graduaste de la Era de Piedra y ahora estás entrando a la Era de Vapor, aquí la maquinaria usa vapor.&r&r"
+			""
+			"Empecemos con algo fácil, crea &6tu primer boiler&r o generador de vapor, existen 3 tipos:"
+			""
+			"- Boiler Sólido"
+			"- Boiler Liquido"
+			"- Boiler Solar"
+			""
+			"Por ahora puedes obtar por el Sólido."
+		]
 		id: "20E7AFFE4C4D472C"
+		size: 1.5d
+		subtitle: "Steam, Steel, Steal, Vapor? What?"
 		tasks: [{
-			id: "765209B1BD548086"
-			item: "minecraft:stripped_oak_wood"
+			id: "69BE274E47A5C848"
+			item: {
+				Count: 1
+				id: "itemfilters:or"
+				tag: {
+					items: [
+						{
+							Count: 1b
+							id: "gtceu:lp_steam_solid_boiler"
+						}
+						{
+							Count: 1b
+							id: "gtceu:lp_steam_liquid_boiler"
+						}
+						{
+							Count: 1b
+							id: "gtceu:lp_steam_solar_boiler"
+						}
+					]
+				}
+			}
+			title: "Boilers"
 			type: "item"
 		}]
+		title: "Tipos de Boiler"
 		x: 0.0d
 		y: 0.0d
 	}]

@@ -29,6 +29,8 @@ event.remove({ id: 'create:crafting/materials/andesite_alloy_from_zinc' })
 event.remove({ id: 'create:crafting/materials/andesite_alloy' })
 event.remove({ id: 'gtceu:shaped/pyrolyse_oven' })
 event.remove({ id: 'gtceu:shaped/electronic_circuit_lv' })
+event.remove({ id: 'gtceu:shaped_fluid_container/treated_wood_planks' })
+event.remove({ id: 'gtceu:shapeless/dust_bronze' })
 
 
 //SALIDA

@@ -23,7 +23,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "39FE734F52F7CBA3"
-				table_id: 4653478291503427931L
 				type: "choice"
 			}]
 			shape: "pentagon"

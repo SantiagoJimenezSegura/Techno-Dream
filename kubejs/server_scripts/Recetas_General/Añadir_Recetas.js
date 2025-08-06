@@ -214,5 +214,6 @@ event.campfireCooking('gtceu:charred_mud_ingot', 'gtceu:mud_mixture_dust', 0, 40
 event.campfireCooking('minecraft:brick', 'gtceu:compressed_clay', 0, 320)
 event.campfireCooking('gtceu:andesite_alloy_ingot', 'gtceu:andesite_alloy_dust', 0, 400)
 event.campfireCooking('minecraft:leather', 'kubejs:compressed_raw_leather', 0, 220)
+event.campfireCooking('gtceu:wrought_iron_nugget', 'minecraft:iron_nugget', 0, 300)
 
 })

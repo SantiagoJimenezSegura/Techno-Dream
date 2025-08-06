@@ -151,12 +151,6 @@
 					item: "minecraft:cooked_beef"
 					type: "item"
 				}
-				{
-					exclude_from_claim_all: true
-					id: "2918065B6774B0F7"
-					table_id: 4843678763669674976L
-					type: "random"
-				}
 			]
 			subtitle: "Herramientas Modulares"
 			tasks: [
@@ -203,12 +197,6 @@
 			dependencies: ["7A9BC735747E44C3"]
 			description: ["Tinker´s Construct"]
 			id: "26E90CA7DEA3F8FA"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "10604DDB12519080"
-				table_id: 4843678763669674976L
-				type: "random"
-			}]
 			size: 1.5d
 			subtitle: "Mesitas del Tinkers"
 			tasks: [
@@ -244,25 +232,17 @@
 				"Pero por el momento &6no puedes hacerla&r, esta se puede realizar con bloques de aleaciones que aun no tienes a tu disposición. Regresa cuando puedas crear &6bloques de bronze&r."
 			]
 			id: "24DF63E9A0D8F007"
-			rewards: [
-				{
-					id: "766BA24DCD3444E8"
-					item: {
-						Count: 1
-						id: "tconstruct:tool_handle"
-						tag: {
-							Material: "tconstruct:steel"
-						}
+			rewards: [{
+				id: "766BA24DCD3444E8"
+				item: {
+					Count: 1
+					id: "tconstruct:tool_handle"
+					tag: {
+						Material: "tconstruct:steel"
 					}
-					type: "item"
 				}
-				{
-					exclude_from_claim_all: true
-					id: "21D88E2C8F268D26"
-					table_id: 4843678763669674976L
-					type: "choice"
-				}
-			]
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "\"Tool Forge\""
 			tasks: [{
@@ -291,35 +271,27 @@
 			]
 			icon: "gtceu:primitive_clay_blast_furnace"
 			id: "230F9DE2AE63866C"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0F6F676B43A0D646"
-					table_id: 4843678763669674976L
-					type: "choice"
-				}
-				{
-					id: "464406F150751947"
-					item: {
-						Count: 1
-						id: "gtceu:wrought_iron_wrench"
-						tag: {
-							DisallowContainerItem: 0b
-							GT.Behaviours: {
-								Mode: 2b
-							}
-							GT.Tool: {
-								Damage: 0
-								HarvestLevel: 2
-								MaxDamage: 383
-								ToolSpeed: 6.0f
-							}
-							HideFlags: 2
+			rewards: [{
+				id: "464406F150751947"
+				item: {
+					Count: 1
+					id: "gtceu:wrought_iron_wrench"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							Mode: 2b
 						}
+						GT.Tool: {
+							Damage: 0
+							HarvestLevel: 2
+							MaxDamage: 383
+							ToolSpeed: 6.0f
+						}
+						HideFlags: 2
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			subtitle: "AHAP"
 			tasks: [
 				{
@@ -430,12 +402,6 @@
 			]
 			description: ["Ahora con tu primer mutibloque puedes crear &6Charred Coke Oven Bricks&r, los cuales te servirán para armar tu segundo multibloque, el Coke Oven, este te servirá para conseguir &l&8Carbón Vegetal&r&r y &l&8Carbón de Coke&r&r para usarlos en tu &6PCBF&r, quizás te interese hacer varios de estos."]
 			id: "6F76D07628E02721"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "4BE2589B7EBF736D"
-				table_id: 4843678763669674976L
-				type: "choice"
-			}]
 			subtitle: "Carbón Vegetal, ¿Gratis?"
 			tasks: [
 				{
@@ -458,12 +424,6 @@
 			dependencies: ["615F19D37819538B"]
 			description: ["Estos metales son &6esenciales&r para la progresión a partir de este punto, procura mantener una &6cantidad costante y razonable&r."]
 			id: "613F9F3F8EE51E1B"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "768303FDD8F0809B"
-				table_id: 4843678763669674976L
-				type: "choice"
-			}]
 			size: 1.5d
 			subtitle: "Tus primeros lingotes"
 			tasks: [
@@ -531,20 +491,12 @@
 				"Usa el EMI para ayudarte de las recetas, pon tu cursor encima de algún objeto y &6dale click o dale click a la letra R&r en el teclado, debería mostrarte la recetas, de igual manera si haces lo mismo pero con el &6click derecho o con la 6etra U&r, podrás ver sus usos, si es que los tiene."
 			]
 			id: "3706B69E65410B5B"
-			rewards: [
-				{
-					count: 4
-					id: "65EBCCC6DCE674BC"
-					item: "gtceu:iron_plate"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "10DC0952C2807300"
-					table_id: 4843678763669674976L
-					type: "random"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "65EBCCC6DCE674BC"
+				item: "gtceu:iron_plate"
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "Oh No"
 			tasks: [{
@@ -822,8 +774,13 @@
 				"40C31C7D7AABBF69"
 				"3C6275CE16ECEA2E"
 			]
+			description: [
+				"Por ahora &6no tienes muchas opciones&r para generar energía rotacional, quizás &6más adelante&r esto cambie."
+				""
+				"[ \"Checa el capitulo de \", { \"text\": \"Generación de energía en la Era de Piedra\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3C6275CE16ECEA2E\" } }, \" para saber más.\" ]"
+			]
 			id: "5FD35FD46CCC93F0"
-			subtitle: "Información"
+			subtitle: "Checa el capitulo de Generación de Energía"
 			tasks: [{
 				id: "78E34A66EF714754"
 				type: "checkmark"
@@ -997,6 +954,7 @@
 				"08B12CF4B6ED79A0"
 				"5FD35FD46CCC93F0"
 			]
+			description: ["Con la &6Prensa Mecánica&r podrás realizar placas de metales de manera más eficiente, &6no podrás hacerlo con todas las placas&r pero será útil por ahora y quizás en un futuro."]
 			id: "2C8FC6EC4298F008"
 			size: 1.5d
 			tasks: [{
@@ -1004,7 +962,7 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			title: "Prensa Mécanica"
+			title: "Prensa Mecánica"
 			x: 8.0d
 			y: 8.5d
 		}
@@ -1042,6 +1000,11 @@
 		}
 		{
 			dependencies: ["2C8FC6EC4298F008"]
+			description: [
+				"Pon pepitas de hierro en una hoguera para obtener &6pepitas de Hierro Forjado&r, este junto con un poco de lava se podrá convertir en un lingote de Hierro Forjado. "
+				""
+				"Si tienes dudas puedes checar &6EMI&r."
+			]
 			id: "620D38C2F7D28F00"
 			tasks: [
 				{
@@ -1050,9 +1013,9 @@
 					type: "item"
 				}
 				{
-					count: 63L
+					count: 100L
 					id: "69D25B5A64D7A683"
-					item: { Count: 63, id: "gtceu:wrought_iron_nugget" }
+					item: "gtceu:wrought_iron_nugget"
 					type: "item"
 				}
 			]
@@ -1091,6 +1054,7 @@
 			dependencies: [
 				"620D38C2F7D28F00"
 				"6D990E1404A09D26"
+				"3B2ECCCD19FE7B17"
 			]
 			description: [
 				"Si quieres &6mejorar tus herramientas&r o &6comienzas a necesitar&r de Hierro Forjado, por ahora esta es tu &6única manera&r de conseguirlo, no es ni por cerca eficiente pero &6pronto&r podrás mejorar eso."
@@ -1603,7 +1567,7 @@
 			icon: "kubejs:rotacional_circuit"
 			id: "640D2FD18446EA7F"
 			size: 1.5d
-			subtitle: "Podrás mover los engranajes"
+			subtitle: "Estos circuitos son capaz de hacer mover los engranajes"
 			tasks: [
 				{
 					count: 8L
@@ -1662,6 +1626,53 @@
 			}]
 			title: "&3Movimiento Rotacional"
 			x: 2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"2C8FC6EC4298F008"
+				"3B2ECCCD19FE7B17"
+				"0A3BEDB181F1D75C"
+			]
+			description: [
+				"Ahora que tienes la &6Mezcladora Mecánica&r puedes crear polvo de bronze el cual si lo pones en una hoguera te dará Lingotes de Bronze."
+				""
+				"Ahora ya estarías preparado para ir a la &6Era del Vapor&r, buena suerte soñador."
+			]
+			id: "329E45C242769B9E"
+			size: 1.5d
+			tasks: [{
+				id: "21E8B08F7582C014"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			title: "Mezcladora Mecánica"
+			x: 10.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["05BEF00298FF45E5"]
+			id: "3B2ECCCD19FE7B17"
+			tasks: [{
+				count: 8L
+				id: "7E26C275C6B1FAF5"
+				item: { Count: 8, id: "gtceu:wrought_iron_plate" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["329E45C242769B9E"]
+			id: "467CF5C2FF470980"
+			size: 1.5d
+			tasks: [{
+				count: 64L
+				id: "0439F82D9E19DD5E"
+				item: { Count: 64, id: "gtceu:bronze_dust" }
+				type: "item"
+			}]
+			x: 12.0d
 			y: 8.5d
 		}
 	]

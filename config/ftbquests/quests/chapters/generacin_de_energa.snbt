@@ -1,4 +1,5 @@
 {
+	autofocus_id: "7D119044E99A325B"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "generacin_de_energa"
@@ -21,14 +22,22 @@
 		}
 		{
 			dependencies: ["7D119044E99A325B"]
+			description: [
+				"Por ahora solo hay 3 maneras de generar energía rotacional, las cuales son:"
+				""
+				"- Rueda de Agua"
+				"- Motor de Vapor"
+				"- Molino de Viento"
+			]
+			icon: "create:large_cogwheel"
 			id: "3C6275CE16ECEA2E"
 			subtitle: "Unidades de Estrés (SU)"
 			tasks: [{
-				id: "1C3E881AB9AE6FB1"
+				id: "09DDB8A62B34113F"
 				type: "checkmark"
 			}]
 			title: "Era de Piedra"
-			x: 4.5d
+			x: 3.5d
 			y: 0.0d
 		}
 		{
@@ -42,6 +51,107 @@
 			title: "Era del Vapor"
 			x: 7.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["3C6275CE16ECEA2E"]
+			description: [
+				"Este será tu fiel amigo por un rato hasta que obtes por usar otros &6metódos para generar energía rotacional&r, por ahora esta es la &6única&r a tu disposición."
+				""
+				"Posteriormente podrás obtar por hacer la rueda de agua, pero para eso vas a ocupar &6madera tratada&r. Buena Suerte"
+				"{@pagebreak}"
+				"Para construir tu molino de viento debes tener las siguiente cosas en cuenta:"
+				""
+				"Para funcionar necesita un minimo de 8 velas, estas velas se conectan a través del bloque central pegado al molino de viento, puedes usar &6chasis lineal&r o &6radial&r para esto mismo, incluso puedes usar cualquier otro bloque siempre y cuando los pegues con &2pegamente&r, los chasis no necesitan de este."
+				""
+				"Posteriormente dale click derecho al molino y empezará a funcionar, lo último por decir es que los molinos de viento pueden soportar hasta un máximo de &6128 velas&r."
+			]
+			id: "070D237B5DF2849D"
+			subtitle: "Usa la fuerza del viento para mover maquinaria"
+			tasks: [
+				{
+					id: "2761BCD56D7858B9"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7BC0A7944FCB4E4B"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "create:sail_frame"
+								}
+								{
+									Count: 1b
+									id: "create:white_sail"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Molino de Viento"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["288AA93EDD39FE28"]
+			id: "31E24E6E93BCE6AD"
+			tasks: [{
+				id: "56444F7080273210"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["070D237B5DF2849D"]
+			description: [
+				"El &6Motor de Vapor&r es la manera más eficiente de conseguir grandes cantidades de energía rotacional, para realizarlo vas a necesitar acero para los &6Quemadores de Blaze&r."
+				""
+				"Los &6Quemadores de Blaze&r hacen que el agua en el interior del tanque se caliente y genere vapor que hace mover los engranajes."
+			]
+			id: "166F54213C3B0318"
+			subtitle: "Convierte el agua en vapor para usarlo como energía"
+			tasks: [
+				{
+					id: "3EF83265AA374BD9"
+					item: "create:steam_engine"
+					type: "item"
+				}
+				{
+					id: "0ADD0643CB0C5C32"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["070D237B5DF2849D"]
+			description: [
+				"Podrías considerar las ruedas de agua como tu &6segunda opción&r para generar energía rotacional, pero para realizar estas mismas ocupas madera tratadas."
+				""
+				"La &6Madera Tratada&r se consigue llenando tablones de madera con creosote y posteriormente lo comprimes para obtener tablones de madera tratada."
+				""
+				"El &6Creosote&r lo obtienes en el Coke Oven metiendo troncos de madera hasta que se vuelva carbón o carbón hasta que se vuelva Coal Coke o Carbón de Coke."
+			]
+			id: "328246CBD6D6D0D3"
+			subtitle: "Usa la fuerza de la naturaleza para generar energía"
+			tasks: [{
+				count: 4L
+				id: "0396D7A1199265B9"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
 		}
 	]
 	title: "&fGeneración de Energía"

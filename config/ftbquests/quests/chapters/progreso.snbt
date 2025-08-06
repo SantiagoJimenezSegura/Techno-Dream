@@ -30,7 +30,7 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			subtitle: "Entrando ha &7LV"
+			subtitle: "Entrando a &7LV"
 			tasks: [{
 				consume_items: false
 				id: "7009E978C3898750"

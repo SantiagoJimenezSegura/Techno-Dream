@@ -1,3 +1,6 @@
+
+    /// OBJETOS ///
+
 StartupEvents.registry('item', technodream => {
 	technodream.create('lunar_miner_i')
     .displayName('Minero Lunar')
@@ -48,3 +51,11 @@ StartupEvents.registry('item', technodream => {
     .maxStackSize('64')
 })
 
+    /// BLOQUES ///
+
+StartupEvents.registry('block', technodream => {
+  technodream.create('unprocessed_treated_plank') // Create a new block with ID 'kubejs:unprocessed_treated_plank'
+  .displayName('Madera Tratada sin Procesar')
+  .textureAll('kubejs:block/unprocessed_treated_plank')
+  .soundType('wood')
+})
