@@ -1,4 +1,4 @@
-#  <img width="512" height="512" alt="escritura katakana logo Techno Dream" src="https://github.com/user-attachments/assets/4dd0434f-d6c9-458f-82a4-a76933e98276" />    Techno-Dream
+# Techno-Dream
 # Technological Modpack focused on [Gregtech CEu Modern](https://github.com/GregTechCEu/GregTech-Modern) in Minecraft 1.20.1
 # Features
 - Stone and Steam Age
