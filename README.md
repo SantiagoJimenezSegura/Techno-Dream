@@ -1,5 +1,5 @@
 # Techno-Dream
-# Technological Modpack focused on [Gregtech CEu Modern](https://github.com/GregTechCEu/GregTech-Modern) in Minecraft 1.20.1
+## Technological Modpack focused on [Gregtech CEu Modern](https://github.com/GregTechCEu/GregTech-Modern) in Minecraft 1.20.1 
 # Features
 - Stone and Steam Age
 - The ages have been extended
