@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "la_creacin"
-	group: "3F6FC1AC3A5D652E"
+	group: ""
 	icon: "biomesoplenty:origin_grass_block"
 	id: "15BAA7C58DC00BC0"
 	order_index: 0
@@ -219,6 +219,8 @@
 				""
 				"&6Principales&r: De forma circular, misiones que te llevaran através del modpack para completarlo. "
 				""
+				"&6Prioritarias&r: De forma de octagono, misiones que cuentan cómo un avance considerable."
+				""
 				"&6Consejos&r: De forma hexagono, vertientes de misiones principales que darán ayudas en consejos, maquinaria, crafteo, etc. Quizás debas echarles un vistazo."
 				""
 				"{@pagebreak}"
@@ -316,5 +318,5 @@
 		}
 	]
 	subtitle: ["&fINICIO"]
-	title: "&6La creación"
+	title: "&6La Creación"
 }

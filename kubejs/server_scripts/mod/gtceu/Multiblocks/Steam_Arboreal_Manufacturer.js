@@ -1,0 +1,80 @@
+ServerEvents.recipes(event => {
+    
+    // OAK TREE //
+    event.recipes.gtceu.steam_arboreal_manufacturer('sam_oak_log')
+        .chancedInput('minecraft:oak_sapling', 2000, 0)
+        .itemInputs(Item.of('1x gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').weakNBT())
+        .itemOutputs('8x minecraft:oak_log')
+        .chancedOutput('minecraft:oak_sapling', 1500, 0)
+        .chancedOutput('minecraft:apple', 1500, 0)
+        .duration(2100)
+        .EUt(GTValues.VA[GTValues.LV])
+    
+    event.recipes.gtceu.steam_arboreal_manufacturer('sam_oak_log_boost')
+        .chancedInput('2x minecraft:oak_sapling', 2000, 0)
+        .itemInputs('4x minecraft:bone_meal')
+        .itemInputs(Item.of('2x gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').weakNBT())
+        .itemOutputs('16x minecraft:oak_log')
+        .chancedOutput('minecraft:oak_sapling', 1500, 0)
+        .chancedOutput('minecraft:apple', 1500, 0)
+        .duration(4200)
+        .EUt(GTValues.VA[GTValues.LV])
+
+        // SPRUCE TREE //
+    event.recipes.gtceu.steam_arboreal_manufacturer('sam_spruce_log')
+        .chancedInput('minecraft:spruce_sapling', 2000, 0)
+        .itemInputs(Item.of('1x gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').weakNBT())
+        .itemOutputs('8x minecraft:spruce_log')
+        .chancedOutput('minecraft:spruce_sapling', 1500, 0)
+        .duration(2100)
+        .EUt(GTValues.VA[GTValues.LV])
+    
+    event.recipes.gtceu.steam_arboreal_manufacturer('sam_spruce_log_boost')
+        .chancedInput('2x minecraft:spruce_sapling', 2000, 0)
+        .itemInputs('4x minecraft:bone_meal')
+        .itemInputs(Item.of('2x gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').weakNBT())
+        .itemOutputs('16x minecraft:spruce_log')
+        .chancedOutput('minecraft:spruce_sapling', 1500, 0)
+        .duration(4000)
+        .EUt(GTValues.VA[GTValues.LV])
+
+        // RUBBER TREE
+    event.recipes.gtceu.steam_arboreal_manufacturer('sam_rubber_log')
+        .chancedInput('gtceu:rubber_sapling', 2000, 0)
+        .itemInputs(Item.of('1x gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').weakNBT())
+        .itemOutputs('8x gtceu:rubber_log')
+        .chancedOutput('gtceu:rubber_sapling', 1500, 0)
+        .chancedOutput('4x gtceu:sticky_resin', 1000, 0)
+        .duration(2100)
+        .EUt(GTValues.VA[GTValues.LV])
+    
+    event.recipes.gtceu.steam_arboreal_manufacturer('sam_rubber_log_boost')
+        .chancedInput('2x gtceu:rubber_sapling', 2000, 0)
+        .itemInputs('4x minecraft:bone_meal')
+        .itemInputs(Item.of('2x gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').weakNBT())
+        .itemOutputs('16x gtceu:rubber_log')
+        .chancedOutput('gtceu:rubber_sapling', 1500, 0)
+        .chancedOutput('8x gtceu:sticky_resin', 1000, 0)
+        .duration(4000)
+        .EUt(GTValues.VA[GTValues.LV])
+
+        // CHERRY TREE //
+    event.recipes.gtceu.steam_arboreal_manufacturer('sam_cherry_log')
+        .chancedInput('minecraft:cherry_sapling', 2000, 0)
+        .itemInputs(Item.of('1x gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').weakNBT())
+        .itemOutputs('8x minecraft:cherry_log')
+        .chancedOutput('minecraft:cherry_sapling', 1500, 0)
+        .duration(2100)
+        .EUt(GTValues.VA[GTValues.LV])
+    
+    event.recipes.gtceu.steam_arboreal_manufacturer('sam_cherry_log_boost')
+        .chancedInput('2x minecraft:cherry_sapling', 2000, 0)
+        .itemInputs('4x minecraft:bone_meal')
+        .itemInputs(Item.of('2x gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').weakNBT())
+        .itemOutputs('16x minecraft:cherry_log')
+        .chancedOutput('minecraft:cherry_sapling', 1500, 0)
+        .duration(4000)
+        .EUt(GTValues.VA[GTValues.LV])
+
+
+})

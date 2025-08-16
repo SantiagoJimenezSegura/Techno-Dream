@@ -5,7 +5,7 @@
 	group: "3F6FC1AC3A5D652E"
 	icon: "gtceu:iv_machine_hull"
 	id: "1AFEFD5711D96CB8"
-	order_index: 7
+	order_index: 6
 	quest_links: [ ]
 	quests: [{
 		id: "764FCCE58E0DD539"

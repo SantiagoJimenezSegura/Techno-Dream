@@ -7,6 +7,7 @@
 	"material.gtceu.charred_mud": "Charred Mud",
 	"material.gtceu.redstone_alloy": "Redstone Alloy",
 	"material.gtceu.unprocessed_crude_ore": "Unprocessed Crude Ore",
+	"material.gtceu.andesite_alloy": "Andesite Alloy",
 
 
 	"__MULTIBLOCK_____TOP": "___MULTIBLOCK___",
@@ -28,6 +29,16 @@
 	"block.gtceu.primitive_raw_material_processor": "§6Procesador Primitivo de Material Crudo",
 	"gtceu.primitive_raw_material_processor": "§6Procesador Primitivo de Material Crudo",
 	"block.gtceu.primitive_raw_material_processor.desc": "§5Fuente de Energía:§r Aparato Deconocido",
-	"block.gtceu.primitive_raw_material_processor.desc1": "Estructura que absorbe la energía contenida en el §6Aparato Desconocido"
+	"block.gtceu.primitive_raw_material_processor.desc1": "Estructura que absorbe la energía contenida en el §6Aparato Desconocido",
+
+	"block.gtceu.steam_arboreal_manufacturer": "§6Fabricante Arbóreo a Vapor",
+	"gtceu.steam_arboreal_manufacturer": "§6Fabricante Arbóreo a Vapor",
+
+	"block.gtceu.primitive_clay_solidifier": "§bSolidificador de Arcilla Primitivo",
+	"gtceu.primitive_clay_solidifier": "§bSolidificador de Arcilla Primitivo",
+	"block.gtceu.primitive_clay_solidifier.desc": "Estructura que usa el frío para solidificar materiales",
+
+	"block.gtceu.digestion_tank": "Tanque de Digestión",
+	"gtceu.digestion_tank": "Tanque de Digestión"
 
 }

@@ -7,7 +7,7 @@
 	group: "3F6FC1AC3A5D652E"
 	icon: "create:large_cogwheel"
 	id: "3B5580E3A803AD4E"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -197,6 +197,7 @@
 			dependencies: ["7A9BC735747E44C3"]
 			description: ["Tinker´s Construct"]
 			id: "26E90CA7DEA3F8FA"
+			shape: "octagon"
 			size: 1.5d
 			subtitle: "Mesitas del Tinkers"
 			tasks: [
@@ -265,33 +266,59 @@
 				"57960D7C89D30B6E"
 			]
 			description: [
-				"Felicidades, has hecho tu primer multibloque de muchos."
+				"Felicidades, has hecho tu primer multibloque pero esto solo es la primera parte."
 				""
 				"Quizás quieras construir más para &6acelerar un poco&r las cosas."
+				""
+				"Aquí tienes algunas entradas de objetos y liquidos, por ahora no puedes crearlas y son necesarias para usar el multibloque, posteriormente podrás crear las de &cULV&r."
 			]
 			icon: "gtceu:primitive_clay_blast_furnace"
 			id: "230F9DE2AE63866C"
-			rewards: [{
-				id: "464406F150751947"
-				item: {
-					Count: 1
-					id: "gtceu:wrought_iron_wrench"
-					tag: {
-						DisallowContainerItem: 0b
-						GT.Behaviours: {
-							Mode: 2b
+			rewards: [
+				{
+					id: "464406F150751947"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_wrench"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
 						}
-						GT.Tool: {
-							Damage: 0
-							HarvestLevel: 2
-							MaxDamage: 383
-							ToolSpeed: 6.0f
-						}
-						HideFlags: 2
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "1BB725554E8A5BC2"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "5188671CB1F2C2E3"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "046CC673B311BE07"
+					item: "gtceu:ulv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "6DC29BD0D6E33A7B"
+					item: "gtceu:ulv_output_hatch"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "AHAP"
 			tasks: [
 				{
@@ -421,9 +448,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["615F19D37819538B"]
+			dependencies: ["77A6A8AF653A8A2C"]
 			description: ["Estos metales son &6esenciales&r para la progresión a partir de este punto, procura mantener una &6cantidad costante y razonable&r."]
 			id: "613F9F3F8EE51E1B"
+			shape: "octagon"
 			size: 1.5d
 			subtitle: "Tus primeros lingotes"
 			tasks: [
@@ -448,7 +476,7 @@
 			]
 			title: "Desbloquea lingotes"
 			x: 0.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -469,6 +497,7 @@
 				item: "gtceu:coke_oven_hatch"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "¡Que Emoción!"
 			tasks: [{
 				count: 2L
@@ -477,8 +506,8 @@
 				type: "item"
 			}]
 			title: "Semi-Automatización"
-			x: -1.5d
-			y: 4.5d
+			x: -4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -512,6 +541,7 @@
 		{
 			dependencies: ["613F9F3F8EE51E1B"]
 			id: "40C31C7D7AABBF69"
+			shape: "octagon"
 			size: 1.3d
 			subtitle: "Las primeritas pero no últimas"
 			tasks: [
@@ -602,10 +632,17 @@
 			]
 			title: "Tus Herramientas"
 			x: 4.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["40C31C7D7AABBF69"]
+			description: [
+				"Con ayuda de tu &6Ore Prospector&r puedes rastrear los minerales que hay debajo de tus pies, ya que este solo sirve en un área de &63x3 chunks&r, procura moverte para poder seguir viendo más minerales."
+				""
+				"Si le das click izquiero a alguna vena de minerales las podrás &6marcar&r. "
+				""
+				"La ventana de la derecha sirve como un buscador, pero solo funciona buscando lo que este dentro de esa área &63x3 a tu alrededor&r."
+			]
 			icon: "gtceu:prospector.luv"
 			id: "0CFCB81D9ED6960C"
 			shape: "pentagon"
@@ -615,8 +652,8 @@
 				type: "checkmark"
 			}]
 			title: "Technologia"
-			x: 2.5d
-			y: 7.0d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["40C31C7D7AABBF69"]
@@ -626,7 +663,7 @@
 				"&l¡Ahora disponible en &9más colores&r!&r"
 			]
 			id: "70FE13AFDF722B3C"
-			shape: "pentagon"
+			shape: "hexagon"
 			subtitle: "Pa qué?"
 			tasks: [{
 				id: "2BC82E3BFDF6F046"
@@ -641,7 +678,7 @@
 			}]
 			title: "Crowbarsss"
 			x: 3.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["40C31C7D7AABBF69"]
@@ -750,6 +787,7 @@
 			]
 			description: ["Consigue algunos materiales preciosos, quizás te sirvan más adelante en la progresión o les encuentres &6algún buen uso&r."]
 			id: "2B0C27DFEE8C63D2"
+			shape: "pentagon"
 			subtitle: "Mira cómo brillan!"
 			tasks: [
 				{
@@ -766,8 +804,8 @@
 				}
 			]
 			title: "Preciosos"
-			x: 1.0d
-			y: 7.0d
+			x: 1.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -787,7 +825,7 @@
 			}]
 			title: "Energía Rotacional"
 			x: 7.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -795,6 +833,7 @@
 				"4A0C0031720C92A4"
 			]
 			id: "1B5E63411548CADC"
+			shape: "octagon"
 			size: 1.5d
 			tasks: [
 				{
@@ -812,7 +851,7 @@
 			]
 			title: "Aleación de Andesita"
 			x: 0.0d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1B5E63411548CADC"]
@@ -838,6 +877,7 @@
 					type: "item"
 				}
 			]
+			shape: "hexagon"
 			subtitle: "Waos, Create"
 			tasks: [{
 				id: "40D024B07B8F5C00"
@@ -845,7 +885,7 @@
 			}]
 			title: "¿¡Create IN GT MODPACK!?"
 			x: -1.5d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1B5E63411548CADC"]
@@ -873,13 +913,14 @@
 				}
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "7EC916DF21473175"
 				type: "checkmark"
 			}]
 			title: "Mejora 2.0"
 			x: -1.5d
-			y: 9.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -918,7 +959,7 @@
 			}]
 			title: "Mejora 1.0"
 			x: 1.5d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["640D2FD18446EA7F"]
@@ -947,7 +988,7 @@
 				}
 			]
 			x: 6.0d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -956,6 +997,7 @@
 			]
 			description: ["Con la &6Prensa Mecánica&r podrás realizar placas de metales de manera más eficiente, &6no podrás hacerlo con todas las placas&r pero será útil por ahora y quizás en un futuro."]
 			id: "2C8FC6EC4298F008"
+			shape: "octagon"
 			size: 1.5d
 			tasks: [{
 				id: "4A6806F947FC2001"
@@ -964,7 +1006,7 @@
 			}]
 			title: "Prensa Mecánica"
 			x: 8.0d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1021,7 +1063,7 @@
 			]
 			title: "Pepitas de Hierro Forjado"
 			x: 9.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["2C8FC6EC4298F008"]
@@ -1034,7 +1076,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 10.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1048,7 +1090,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 10.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1082,7 +1124,7 @@
 			]
 			title: "Forjando Hierro"
 			x: 10.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1105,7 +1147,7 @@
 			}]
 			title: "Suministro de Lava"
 			x: 8.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			description: [
@@ -1130,6 +1172,7 @@
 					xp: 100
 				}
 			]
+			shape: "octagon"
 			size: 1.5d
 			subtitle: "Estás loco, te dañaras las manos."
 			tasks: [{
@@ -1315,6 +1358,7 @@
 					xp: 100
 				}
 			]
+			shape: "hexagon"
 			subtitle: "El paquete completo"
 			tasks: [
 				{
@@ -1467,6 +1511,7 @@
 		{
 			dependencies: ["137458294DA9632C"]
 			id: "45AF9AA094C92525"
+			shape: "hexagon"
 			subtitle: "El set restante de pedernal"
 			tasks: [
 				{
@@ -1541,31 +1586,37 @@
 			description: [
 				"Ya que no puedes usar un &lhorno común&r, tienes que utilizar el &6AHAP&r y por eso mismo aqui te dijo una lista de los materiales que puedes procesar y/o conseguir con el."
 				""
+				"El &6AHAP&r es un multibloque que te permitirá conseguir el liquido de los minerales, pero para poder conseguir su versión solidificada necesitaras el &bSAP&r o &bSolidificador de Arcilla Primitvo&r."
+				""
 				"&6Checa la siguiente página&r =>"
 				"{@pagebreak}"
-				"&5Lingotes y aleaciones&r:"
+				"&5Materiales&r:"
 				"- Hierro"
 				"- Cobre"
 				"- Estaño (Tin)"
-				"- Bronze"
-				"- Andesite Alloy"
+				"- Plomo (Lead)"
+				"- Nickel"
+				"- Oro"
 				""
-				"Podrás realizar recetas simples o obtar por usar lava y &lmejorar la salida&r de estos mismos, luego desbloquearás el &6Steam Oven&r para cocinar tus lingotes con vapor."
+				"Podrás realizar recetas simples o obtar por usar lava y &lmejorar la salida&r de estos mismos, luego desbloquearás el &6Steam Oven&r para conseguir lingotes directamente con vapor."
 			]
 			id: "615F19D37819538B"
+			shape: "hexagon"
+			size: 0.75d
 			subtitle: "Información"
 			tasks: [{
 				id: "704CB016F91B8BE9"
 				type: "checkmark"
 			}]
-			title: "&6AHAP"
+			title: "&6AHAP&r y &bSAP"
 			x: 0.0d
-			y: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["62D9EE15F7E4D736"]
 			icon: "kubejs:rotacional_circuit"
 			id: "640D2FD18446EA7F"
+			shape: "octagon"
 			size: 1.5d
 			subtitle: "Estos circuitos son capaz de hacer mover los engranajes"
 			tasks: [
@@ -1608,7 +1659,7 @@
 			]
 			title: "&6Circuitos Rotacionales"
 			x: 4.0d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1B5E63411548CADC"]
@@ -1620,13 +1671,14 @@
 				"Necesitarás realizar &3circuitos rotacionales&r para poder realizar las maquinaria rotacional, no es tan difícil, ¿Cierto?"
 			]
 			id: "62D9EE15F7E4D736"
+			shape: "hexagon"
 			tasks: [{
 				id: "15D6956B667112C8"
 				type: "checkmark"
 			}]
 			title: "&3Movimiento Rotacional"
 			x: 2.0d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1640,6 +1692,7 @@
 				"Ahora ya estarías preparado para ir a la &6Era del Vapor&r, buena suerte soñador."
 			]
 			id: "329E45C242769B9E"
+			shape: "octagon"
 			size: 1.5d
 			tasks: [{
 				id: "21E8B08F7582C014"
@@ -1648,7 +1701,7 @@
 			}]
 			title: "Mezcladora Mecánica"
 			x: 10.0d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["05BEF00298FF45E5"]
@@ -1665,6 +1718,7 @@
 		{
 			dependencies: ["329E45C242769B9E"]
 			id: "467CF5C2FF470980"
+			shape: "octagon"
 			size: 1.5d
 			tasks: [{
 				count: 64L
@@ -1673,7 +1727,74 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 8.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["615F19D37819538B"]
+			description: [
+				"El &bSAP&r o &bSolidificador de Arcilla Primitivo&r es un multibloque el cual con ayuda del frio en su interior y moldes, puedes crear tus primeros lingotes."
+				""
+				"Ya que el multibloque requiere de entradas y salidas, aquí tienes algunas para armar tu primer multibloque, al igual que 3 hielos compactos, posteriormente podrás hacer más."
+			]
+			icon: "gtceu:primitive_clay_solidifier"
+			id: "77A6A8AF653A8A2C"
+			rewards: [
+				{
+					id: "1A6CC02E7DA19226"
+					item: "gtceu:ulv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "51A97F2BA6AB14A9"
+					item: "gtceu:ulv_output_hatch"
+					type: "item"
+				}
+				{
+					id: "709F060B269D77CA"
+					item: "gtceu:ulv_input_bus"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "063401D80B0F2924"
+					item: "minecraft:packed_ice"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Muy frio"
+			tasks: [
+				{
+					id: "6AD579F66013CEE7"
+					item: "gtceu:primitive_clay_solidifier"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "40576B8D784090E6"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:bricks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:stone_bricks"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&bSolidificador de Arcilla Primitvo"
+			x: 0.0d
+			y: 5.0d
 		}
 	]
 	subtitle: ["&fEl INICIO 0.5"]

@@ -1,5 +1,4 @@
 /**
- * Create Dimension Markers for Ad Astra dimensions.
  * Dimension markers are the item-based icons to indicate dimensions for GregTech recipes in EMI.
  */
 GTCEuStartupEvents.registry("gtceu:dimension_marker", event => {
@@ -30,4 +29,10 @@ GTCEuStartupEvents.registry("gtceu:dimension_marker", event => {
         .iconSupplier(() => Item.of("ad_astra:glacio_globe").getItem())
         .tier(0)
         .overrideName("Glacio")
+
+    // Twilight Forest
+    event.create("twilightforest:twilight_forest")
+        .iconSupplier(() => Item.of("twilightforest:twilight_portal_miniature_structure").getItem())
+        .tier(0)
+        .overrideName("Twilight Forest") 
 })

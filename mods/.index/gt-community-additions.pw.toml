@@ -1,13 +1,13 @@
-filename = 'gtca-1.3.jar'
+filename = 'gtca-1.20.1-2.0.0.jar'
 name = 'GT Community Additions'
 side = 'both'
 
 [download]
-hash = 'b5bc5e16b32d6e55aa40feb378b2bee8e40a1970'
+hash = 'f900f69040c6adc14b01e92075c7c72d729b6641'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6512972
+file-id = 6856157
 project-id = 1101718

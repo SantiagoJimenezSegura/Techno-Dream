@@ -1,5 +1,7 @@
 ItemEvents.tooltip(tooltip => {
 
+    // tooltip.add(" ", Text.translatable(" "))
+
     //MULTIBLOCK//
 
     tooltip.add("gtceu:high_pressure_atom_splitter", Text.translatable("block.gtceu.high_pressure_atom_splitter.desc"))
@@ -8,7 +10,10 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.add("gtceu:primitive_raw_material_processor", Text.translatable("block.gtceu.primitive_raw_material_processor.desc"))
     tooltip.add("gtceu:primitive_raw_material_processor", Text.translatable("block.gtceu.primitive_raw_material_processor.desc1"))
+
     tooltip.add("gtceu:primitive_ore_miner", Text.translatable("block.gtceu.primitive_ore_miner.desc"))
     tooltip.add("gtceu:primitive_ore_miner", Text.translatable("block.gtceu.primitive_ore_miner.desc1"))
+
+    tooltip.add("gtceu:primitive_clay_solidifier", Text.translatable("block.gtceu.primitive_clay_solidifier.desc"))
 
 })

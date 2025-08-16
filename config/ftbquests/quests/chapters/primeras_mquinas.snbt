@@ -6,53 +6,596 @@
 	group: "3F6FC1AC3A5D652E"
 	icon: "create:steam_engine"
 	id: "410F404928E39BCE"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["467CF5C2FF470980"]
-		description: [
-			"&7&oFelicidades, te graduaste de la Era de Piedra y ahora estás entrando a la Era de Vapor, aquí la maquinaria usa vapor.&r&r"
-			""
-			"Empecemos con algo fácil, crea &6tu primer boiler&r o generador de vapor, existen 3 tipos:"
-			""
-			"- Boiler Sólido"
-			"- Boiler Liquido"
-			"- Boiler Solar"
-			""
-			"Por ahora puedes obtar por el Sólido."
-		]
-		id: "20E7AFFE4C4D472C"
-		size: 1.5d
-		subtitle: "Steam, Steel, Steal, Vapor? What?"
-		tasks: [{
-			id: "69BE274E47A5C848"
-			item: {
-				Count: 1
-				id: "itemfilters:or"
-				tag: {
-					items: [
-						{
-							Count: 1b
-							id: "gtceu:lp_steam_solid_boiler"
-						}
-						{
-							Count: 1b
-							id: "gtceu:lp_steam_liquid_boiler"
-						}
-						{
-							Count: 1b
-							id: "gtceu:lp_steam_solar_boiler"
-						}
-					]
+	quests: [
+		{
+			dependencies: ["467CF5C2FF470980"]
+			description: [
+				"&7&oFelicidades, te graduaste de la Era de Piedra y ahora estás entrando a la Era de Vapor, aquí la maquinaria usa vapor.&r&r"
+				""
+				"Empecemos con algo fácil, crea &6tu primer boiler&r o generador de vapor, existen 3 tipos:"
+				""
+				"- Boiler Sólido"
+				"- Boiler Liquido"
+				"- Boiler Solar"
+				""
+				"Por ahora puedes obtar por el Sólido."
+			]
+			id: "20E7AFFE4C4D472C"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Steam, Steel, Steal, Vapor? What?"
+			tasks: [{
+				id: "69BE274E47A5C848"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_solid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_liquid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_solar_boiler"
+							}
+						]
+					}
 				}
-			}
-			title: "Boilers"
-			type: "item"
-		}]
-		title: "Tipos de Boiler"
-		x: 0.0d
-		y: 0.0d
-	}]
+				title: "Boilers"
+				type: "item"
+			}]
+			title: "Tipos de Calderas"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20E7AFFE4C4D472C"]
+			description: [
+				"Puede que hayas estado desechando tu creosote ya que hasta ahora no tenía muchas utilidades, pero pronto descubriras algunas de ellas."
+				""
+				"Algo más que debes saber es que puedes usar el creosote en un &6boiler liquido&r para hacerlo funcionar, quizás te interese."
+			]
+			id: "34F6861F41FF72CB"
+			shape: "hexagon"
+			subtitle: "Si te soy sincero, no sé que es este liquido"
+			tasks: [{
+				id: "12043447CD55B31E"
+				item: "gtceu:creosote_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"39D7E78A15A6E6BA"
+				"3694A0E5372079A3"
+				"63824E508A34CE39"
+				"12D97B8950557190"
+				"7B44E67B8F7C0A12"
+			]
+			id: "05931829CA0D16D5"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "3F44B746E33CED33"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["16A9B6EB39F7E47A"]
+			id: "63824E508A34CE39"
+			tasks: [{
+				id: "215816E24DF6AE07"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"28F1D890D0DDDFE6"
+				"73DCEED5F1E015DD"
+				"37BB2E50BBCED3C3"
+				"1236E8B30301C7C3"
+			]
+			hide_dependency_lines: false
+			id: "12D97B8950557190"
+			tasks: [{
+				id: "0A7CF0D06AE4B77A"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["74A2627D94223BA4"]
+			id: "3694A0E5372079A3"
+			tasks: [{
+				id: "5C4341E615FEA7A9"
+				item: "gtceu:red_alloy_single_cable"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4EAFD6C17E0D1DC1"]
+			id: "7B44E67B8F7C0A12"
+			tasks: [{
+				id: "0509454B2C1D9D51"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2EDC7AB2453F921A"]
+			hide_dependency_lines: false
+			id: "39D7E78A15A6E6BA"
+			tasks: [{
+				id: "51F534B0A2AD8C85"
+				item: "gtceu:steel_plate"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7E29DA07273285AA"]
+			id: "16A9B6EB39F7E47A"
+			tasks: [
+				{
+					id: "33DF8EA56D16DEC6"
+					item: "gtceu:resin_circuit_board"
+					type: "item"
+				}
+				{
+					id: "10981892B32F21D5"
+					item: "gtceu:copper_single_wire"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E67C4B229A2D447"]
+			id: "74A2627D94223BA4"
+			tasks: [
+				{
+					id: "68A1EC222164E99C"
+					item: "gtceu:rubber_ingot"
+					type: "item"
+				}
+				{
+					id: "71C90920D4E2031C"
+					item: "gtceu:rubber_plate"
+					type: "item"
+				}
+				{
+					id: "470916968953498E"
+					item: "gtceu:plate_casting_mold"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["20E7AFFE4C4D472C"]
+			id: "640DEE3ED5D351EC"
+			tasks: [{
+				id: "70E950556D97828B"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["20E7AFFE4C4D472C"]
+			id: "2EDC7AB2453F921A"
+			tasks: [{
+				id: "1627E5A8C043E9BE"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["20E7AFFE4C4D472C"]
+			id: "1B3F9AA56DE86F60"
+			tasks: [{
+				id: "6751F8F831DBD71F"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20E7AFFE4C4D472C"]
+			id: "0B9BB5B92D1AC1D4"
+			tasks: [{
+				id: "4D207224C7051853"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["20E7AFFE4C4D472C"]
+			id: "2604D44E6566E099"
+			tasks: [{
+				id: "5AF705D8F21FE81D"
+				item: "gtceu:lp_steam_extractor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2604D44E6566E099"]
+			id: "4E67C4B229A2D447"
+			tasks: [{
+				id: "32A5CD4220ADBB8F"
+				item: "gtceu:raw_rubber_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"0B9BB5B92D1AC1D4"
+				"1B3F9AA56DE86F60"
+				"2604D44E6566E099"
+				"2EDC7AB2453F921A"
+				"640DEE3ED5D351EC"
+			]
+			hide_dependency_lines: true
+			id: "26649A8D004576A5"
+			shape: "hexagon"
+			tasks: [{
+				id: "3B176B2E0A5D3F36"
+				title: "Maquinas a Alta Presión"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26649A8D004576A5"]
+			id: "3CB2AE4BA0AFD721"
+			tasks: [{
+				id: "667CCFE0F00B35DC"
+				item: "gtceu:hp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["26649A8D004576A5"]
+			id: "34B4C0817161DA97"
+			tasks: [{
+				id: "148DF249524E1EB9"
+				item: "gtceu:hp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26649A8D004576A5"]
+			id: "4426AD54986C64EE"
+			tasks: [{
+				id: "4B89CD172C657888"
+				item: "gtceu:hp_steam_compressor"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26649A8D004576A5"]
+			id: "00D9820DDF16020F"
+			tasks: [{
+				id: "6F2DF18C3C6BE015"
+				item: "gtceu:hp_steam_extractor"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["26649A8D004576A5"]
+			id: "42302F3A4265EACB"
+			tasks: [{
+				id: "7ADD74672958AF48"
+				item: "gtceu:hp_steam_macerator"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1B3F9AA56DE86F60"]
+			id: "7E29DA07273285AA"
+			tasks: [{
+				id: "0C7EB9BC970BA110"
+				item: "gtceu:wood_plate"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["640DEE3ED5D351EC"]
+			id: "4EAFD6C17E0D1DC1"
+			tasks: [{
+				id: "3E72E921DA4DB4F9"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:coal_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:charcoal_dust"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Carbón o Carbón Vegetal"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["640DEE3ED5D351EC"]
+			description: [
+				"Ahora que tienes un &6macerador&r puedes triturar minerales y obtener el doble del mismo, es muy útil para el procesado de ciertos minerales ya que puedes obtener sub-productos interesantes."
+				""
+				"Recuerda que puedes usar &5EMI&r, es un gran amigo en este recorrido. pulsa la &6letra U&r con tu ratón sobre algún mineral y podrás ver en la parte superior pestañas, elige la que muestre un mineral y ahi te mostrará las maneras en que puede ser procesado, al igual que sus usos."
+			]
+			id: "74F1CD0A1C2558E6"
+			shape: "hexagon"
+			tasks: [{
+				id: "6A4A74125B9A497F"
+				type: "checkmark"
+			}]
+			title: "Duplicado de Minerales"
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["640DEE3ED5D351EC"]
+			description: ["Este increíble bebé tiene la capacidad de macerar objetos hasta un &6paralelo de 8&r, eso signifca que ejecuta 8 recetas a la vez y solo usa un poco más de vapor que su variable normal."]
+			id: "1C712C3473F3C404"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "2D76AAC2F6AC4D9C"
+				item: "gtceu:steam_grinder"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["20E7AFFE4C4D472C"]
+			hide_dependency_lines: true
+			id: "28F1D890D0DDDFE6"
+			tasks: [{
+				id: "14363B82FCA5F5FE"
+				item: "gtceu:lp_steam_vaccum_chamber"
+				type: "item"
+			}]
+			title: "&6Cámara de Vacío"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B9BB5B92D1AC1D4"]
+			hide_dependent_lines: true
+			id: "2DC9A42454177760"
+			tasks: [
+				{
+					id: "6ACEB2C15A443727"
+					item: "gtceu:ball_casting_mold"
+					type: "item"
+				}
+				{
+					id: "70B05F9CFA51E2D2"
+					item: "gtceu:block_casting_mold"
+					type: "item"
+				}
+				{
+					id: "36F66EAA80191C30"
+					item: "gtceu:gear_casting_mold"
+					type: "item"
+				}
+				{
+					id: "28B242D656A1A366"
+					item: "gtceu:small_gear_casting_mold"
+					type: "item"
+				}
+				{
+					id: "3A3B30F19A422104"
+					item: "gtceu:ingot_casting_mold"
+					type: "item"
+				}
+			]
+			title: "Moldes"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B9BB5B92D1AC1D4"]
+			id: "771626DDAAB05877"
+			tasks: [
+				{
+					id: "25055A7538FF3A88"
+					item: "gtceu:cupronickel_single_wire"
+					type: "item"
+				}
+				{
+					id: "6C76F8E33DA07622"
+					item: "gtceu:fine_cupronickel_wire"
+					type: "item"
+				}
+			]
+			title: "Cuuupro...nickeel?"
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["20E7AFFE4C4D472C"]
+			id: "44B028EDD86F4218"
+			tasks: [{
+				id: "01F044B3E28DE000"
+				item: "gtceu:primitive_humidity_collector"
+				type: "item"
+			}]
+			title: "&6Colector de Humedad Primitivo"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["44B028EDD86F4218"]
+			id: "5D3D91F749889B4C"
+			tasks: [{
+				id: "461ACDD97FB29A53"
+				item: "kubejs:humidity_filter"
+				type: "item"
+			}]
+			title: "Arcilla para Siempre?"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"20E7AFFE4C4D472C"
+				"2DC9A42454177760"
+			]
+			id: "49F4E08623E86445"
+			tasks: [{
+				id: "1139F48601AAF611"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_solar_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_liquid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_solid_boiler"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Calderas de Vapor de Alta Presión "
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["771626DDAAB05877"]
+			id: "73DCEED5F1E015DD"
+			tasks: [{
+				count: 16L
+				id: "68AC0DA25A86C658"
+				item: { Count: 16, id: "gtceu:nickel_ingot" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["771626DDAAB05877"]
+			id: "1236E8B30301C7C3"
+			tasks: [{
+				id: "1098ADA08E92663A"
+				item: "kubejs:vaccum_tube_component"
+				type: "item"
+			}]
+			title: "Componente de Vaccum Tube"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["20E7AFFE4C4D472C"]
+			id: "1FED445374239383"
+			tasks: [{
+				id: "59F06FFB667DFA56"
+				item: "gtceu:lp_steam_toaster_oven"
+				type: "item"
+			}]
+			title: "&6Horno Tostador de Vapor"
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["73DCEED5F1E015DD"]
+			id: "37BB2E50BBCED3C3"
+			tasks: [
+				{
+					count: 16L
+					id: "7FC7B36B2EEEE471"
+					item: { Count: 16, id: "gtceu:invar_ingot" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "3CD0466336E58253"
+					item: { Count: 16, id: "gtceu:invar_ring" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			id: "5241F92DE37B2BB5"
+			tasks: [{
+				id: "697EF49FEEEC7CCC"
+				item: "gtceu:lp_steam_vulcanizer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+	]
 	subtitle: ["&fEl INICIO 1.0"]
 	title: "&6Nivel 0.5 - &fEra del Vapor"
 }

@@ -1,0 +1,15 @@
+[*]
+background: technodream:textures/quest_assets/background.png
+
+text_color:          #FFFFFF
+hover_text_color:    #FFFFA0
+disabled_text_color: #999999
+
+context_background:    white
+context_menu:          black
+
+icon:                 none
+
+full_screen_quest:                  none
+quest_view_background:              black
+quest_view_border:                  white

@@ -139,7 +139,7 @@ worldgen:
 
     # Generate ores indicators above ore veins
     # Default: true
-    oreIndicators: true
+    oreIndicators: false
 
     # Sets the maximum number of chunks that may be cached for ore vein generation.
     # Higher values may improve world generation performance, but at the cost of more RAM usage.
@@ -156,7 +156,7 @@ machines:
   # Whether insufficient energy supply should reset Machine recipe progress to zero.
   # If true, progress will reset.
   # If false, progress will decrease to zero with 2x speed
-  # Default: false
+  # Default: true
   recipeProgressLowEnergy: false
 
   # Whether to require a Wrench, Wirecutter, or other GregTech tools to break machines, casings, wires, and more.
@@ -188,9 +188,13 @@ machines:
   # Default: true
   machineSounds: true
 
+  # Duration in ticks that batching will try to reach.
+  # Default: 100
+  batchDuration: 100
+
   # Whether Steam Multiblocks should use Steel instead of Bronze.
   # Default: false
-  steelSteamMultiblocks: true
+  steelSteamMultiblocks: false
 
   # Whether to enable the cleanroom, required for various recipes.
   # Default: true
@@ -369,8 +373,8 @@ client:
   defaultPaintingColor: #FFFFFF
 
   # The default color to overlay onto Machine (and other) UIs.
-  # 16777215 (#FFFFFF) is no coloring (like GTCE) (default).
-  # 13819135 (#D2DCFF in decimal) is the classic blue from GT5.
+  # #FFFFFF is no coloring (like GTCE) (default).
+  # #D2DCFF is the classic blue from GT5.
   defaultUIColor: #FFFFFF
 
   # Use VBO cache for multiblock preview.
@@ -407,6 +411,14 @@ client:
     # Render fluids in multiblocks that support them?
     # Default: true
     renderFluids: true
+
+    # Whether or not to color tiered machine highlights in the tier color
+    # Default: true
+    coloredTieredMachineOutline: true
+
+    # Whether or not to color wire/cable highlights based on voltage tier
+    # Default: true
+    coloredWireOutline: true
 
 # Config options for Tools and Armor
 tools:
@@ -478,7 +490,7 @@ gameplay:
   universalHazards: false
 
   # Whether environmental hazards like pollution or radiation are active
-  # Default: true
+  # Default: false
   environmentalHazards: false
 
   # How much environmental hazards decay per chunk, per tick.
@@ -513,7 +525,7 @@ compat:
     # The interval between ME Hatch/Bus interact ME network.
     # It may cause lag if the interval is too small.
     # Default: 2 sec
-    updateIntervals: 5
+    updateIntervals: 10
 
     # The energy consumption of ME Hatch/Bus.
     # Default: 1.0AE/t
@@ -569,7 +581,7 @@ compat:
     buttonAnchor: BOTTOM_LEFT
 
     # Which direction the buttons will go
-    # Default: "HORIZONTAL"
+    # Default: "VERTICAL"
     # Allowed values:
     # - VERTICAL
     # - HORIZONTAL
@@ -582,10 +594,6 @@ compat:
     # How vertically far away from the anchor to place the buttons
     # Default: 0
     yOffset: 0
-
-    # Whether to put buttons on a separate toolbar on the right instead of the map type toolbar in JourneyMap.
-    # Default: true
-    rightToolbar: true
 
   # Whether to hide facades of all blocks in JEI and creative search menu.
   # Default: true

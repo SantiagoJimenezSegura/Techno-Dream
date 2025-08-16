@@ -3,11 +3,53 @@
 	default_quest_shape: ""
 	filename: "la_tienda"
 	group: "1B5043855EFD55F5"
-	icon: "gtceu:doge_coin"
+	icon: "kubejs:dream_coin_big"
 	id: "632C8A3E7BAB1185"
+	images: [
+		{
+			height: 2.0d
+			image: "kubejs:item/dream_coin_big"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:item/dream_coin_medium"
+			rotation: 0.0d
+			width: 2.0d
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:item/dream_coin_quarter"
+			rotation: 0.0d
+			width: 2.0d
+			x: 1.5d
+			y: -2.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		icon: "kubejs:dream_coin_big"
+		id: "754955047D1191D6"
+		rewards: [{
+			id: "0E10ABB2D62CFB6B"
+			item: "kubejs:dream_coin_medium"
+			type: "item"
+		}]
+		subtitle: "La tienda, gasta tus monedas"
+		tasks: [{
+			id: "31B7FEA5A4DFA093"
+			type: "checkmark"
+		}]
+		title: "The Shop"
+		x: 0.0d
+		y: 0.0d
+	}]
 	subtitle: ["Go to shoping ;)"]
 	title: "&bThe Shop"
 }

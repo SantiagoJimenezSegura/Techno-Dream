@@ -1,0 +1,13 @@
+filename = 'structuretokubejsaisles-1.0.3.jar'
+name = 'KubeJS aisle tool'
+side = 'both'
+
+[download]
+hash = 'f5b9b367985c498596f652a3f4b11b6c85cfd314'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6587314
+project-id = 1236291

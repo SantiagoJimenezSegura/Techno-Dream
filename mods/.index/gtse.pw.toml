@@ -1,13 +1,13 @@
-filename = 'gtse-0.0.2-1.6.4.jar'
+filename = 'gtse-1.0.0.jar'
 name = 'GregTech Simple Extension'
 side = 'both'
 
 [download]
-hash = '32c013f47e062d4a9c5572a03f92f0609662c710'
+hash = '44d3f9273fca11c8f2f8df535f7c347361ef7c5c'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6546867
+file-id = 6771657
 project-id = 1252209

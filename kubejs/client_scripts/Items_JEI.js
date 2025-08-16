@@ -112,5 +112,6 @@ JEIEvents.removeCategories(event => {
     /// ESCONDER CATEGORÍAS ///
     console.log(event.categoryIds) //log a list of all category ids to logs/kubejs/client.txt
 
+  event.remove('twilightforest:uncrafting')
   event.remove('twilightforest:uncrafting_table')
 })

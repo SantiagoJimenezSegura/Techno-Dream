@@ -1,7 +1,0 @@
-{
-  "biomes": "minecraft:warped_forest",
-  "generation_stage": "VEGETAL_DECORATION",
-  "features": "productivebees:warped_fungus_bees",
-  "type": "productivebees:nest",
-  "maxTemperature": 100
-}

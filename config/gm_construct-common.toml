@@ -9,13 +9,8 @@
 ["Material Modification"]
 	#Disable generating tinker's material information for the following GT materials.
 	ignoredGTMaterials = ["bronze", "cobalt", "copper", "diamond", "flint", "invar", "iron", "netherite", "polybenzimidazole", "polyethylene", "polytetrafluoroethylene", "rose_gold", "rubber", "steel", "silicone_rubber", "styrene_butadiene_rubber", "wood"]
-	#Disable generating default material definitions for the following GT materials.
-	ignoredGTMatDefs = []
-	#Disable generating default material stats for the following GT materials.
-	#Any materials in this list will also ignore global modifiers.
-	ignoredGTMatStats = []
-	#Disable generating default material traits for the following GT materials.
-	ignoredGTMatTraits = []
+	#Generate plate shields for GT materials.
+	generatePlateShield = true
 
 #Configuration related to global modifiers.
 ["Global Modifiers"]
@@ -59,4 +54,14 @@
 		globalHandleAttackDamageModifier = 1.0
 		#Range: 0.1 ~ 1.7976931348623157E308
 		globalHandleAttackSpeedModifier = 1.0
+
+	#Configuration related to armor global modifiers
+	["Global Modifiers"."Armor Global Modifiers"]
+		#Range: 0.1 ~ 1.7976931348623157E308
+		globalArmorDurabilityModifier = 0.15
+
+	#Configuration related to shield global modifiers
+	["Global Modifiers"."Shield Global Modifiers"]
+		#Range: 0.1 ~ 1.7976931348623157E308
+		globalShieldDurabilityModifier = 1.0
 
